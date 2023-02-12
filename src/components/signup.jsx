@@ -6,6 +6,7 @@ export default function Signup() {
     const [linkItems, setItems] = useState([
         "Home", "Login", "About Us", "Contact"
     ]);
+    const emailRegEx = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     const[signUpData, setSIgnUpData] = useState({
         name : "",
@@ -42,6 +43,11 @@ export default function Signup() {
         }else{ setNotMatch(true)}
         
     }
+
+    //reget for email?
+
+
+
 
 
 
