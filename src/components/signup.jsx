@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../images/logo-icon.svg'
 import { Link } from 'react-router-dom'
+import "./signup.css"
 
 export default function Signup() {
     const [linkItems, setItems] = useState([
