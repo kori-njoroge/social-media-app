@@ -1,0 +1,44 @@
+.dashdash{
+    margin: -9px ;
+    height: 100vh;
+}
+
+/* SIDE BAR STYLES */
+.sidebar-container{
+    width: 22vw;
+    border: 1px solid;
+}
+.sidebar-top{
+    background-color: #393B46;
+    text-align: center;
+    padding-top: 5vh;
+}
+.logo1{
+    height: 15vh;
+    margin-bottom: 2vh;
+}
+.usercard{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 15px 0px;
+    margin-bottom: -60vh;
+    border: 1px solid;
+}
+.usercard hr{
+    width: 60%;
+    color: #e5ebf0;
+}
+.memberPhoto{
+    height: 10vh;
+    border-radius: 50%;
+}
+.card-low{
+    display: flex;
+    padding: 0px 35px;
+    justify-content: space-around;
+}
+.sidebar-bottom{
+    background-color: #F8F9FB;
+}
