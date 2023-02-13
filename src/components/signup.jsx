@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import logo from '../images/logo-icon.svg'
 import { Link } from 'react-router-dom'
-import "./signup.css"
+import "../styles/signup.css"
+import { useNavigate } from 'react-router-dom'
 
 export default function Signup() {
+    const navigate = useNavigate()
     const [linkItems, setItems] = useState([
-        "Home", "Login", "About Us", "Contact"
+        "home", "login", "about us", "contact"
     ]);
     // const emailRegEx = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
@@ -41,6 +43,7 @@ export default function Signup() {
                 conPass:""
             }
             ) 
+            navigate('/dashboard');
         }else{ setNotMatch(true)}
         
     }
@@ -57,10 +60,10 @@ export default function Signup() {
         <div className='singup--page'>
             <div className="singup--nav">
                 <img className='logo' src={logo} alt="logo" />
-                <Link className='a'>Login</Link>
+                <Link to={'/login'}  className='a'>login</Link>
             </div>
             <div className="signup--content">
-                <div className="left">left</div>
+                {/* <div className="left">left</div> */}
                 <div className="right">
                     <div className="right--top">
                     <img className='logo' src={logo} alt="brand" />
@@ -130,7 +133,7 @@ export default function Signup() {
                 </div>
             </div>
             <div className="singup-links">
-                {linkItems && linkItems.map((item, index) => <Link className='a' key={index}>{item}</Link>)}
+                {linkItems && linkItems.map((item, index) => <Link to={`/${item}`} className='a' key={index}>{item}</Link>)}
             </div>
         </div>
     )
