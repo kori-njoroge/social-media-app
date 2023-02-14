@@ -11,41 +11,43 @@ export default function Signup() {
     ]);
     // const emailRegEx = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-    const[signUpData, setSIgnUpData] = useState({
-        name : "",
+    const [signUpData, setSIgnUpData] = useState({
+        name: "",
         phonenumber: "",
         email: "",
         password: "",
-        conPass:""
+        conPass: ""
     })
-    const[notMatch, setNotMatch] = useState(false);
-    function handleformOnchange(event){
+    const [notMatch, setNotMatch] = useState(false);
+    function handleformOnchange(event) {
         event.preventDefault();
-        const{name, value} = event.target;
-        setSIgnUpData(prevState =>{
-            return {...prevState,
-            [name]: value}
+        const { name, value } = event.target;
+        setSIgnUpData(prevState => {
+            return {
+                ...prevState,
+                [name]: value
+            }
         });
     }
-    function handleOnfocus(){
+    function handleOnfocus() {
         setNotMatch(false)
     }
-    function handleSubmit(event){
+    function handleSubmit(event) {
         event.preventDefault();
-        if(signUpData.password === signUpData.conPass){
+        if (signUpData.password === signUpData.conPass) {
             console.log(signUpData);
             setSIgnUpData(
                 {
-                name : "",
-                phonenumber: "",
-                email: "",
-                password: "",
-                conPass:""
-            }
-            ) 
+                    name: "",
+                    phonenumber: "",
+                    email: "",
+                    password: "",
+                    conPass: ""
+                }
+            )
             navigate('/dashboard');
-        }else{ setNotMatch(true)}
-        
+        } else { setNotMatch(true) }
+
     }
 
     //reget for email?
@@ -60,75 +62,79 @@ export default function Signup() {
         <div className='singup--page'>
             <div className="singup--nav">
                 <img className='logo' src={logo} alt="logo" />
-                <Link to={'/login'}  className='a'>login</Link>
+                <Link to={'/login'} className='a'>login</Link>
             </div>
             <div className="signup--content">
                 {/* <div className="left">left</div> */}
                 <div className="right">
                     <div className="right--top">
-                    <img className='logo' src={logo} alt="brand" />
-                    <p>Join gazillions of people</p>
+                        <img className='logo' src={logo} alt="brand" />
+                        <p>Join gazillions of people</p>
                     </div>
                     <form className='singup--form' onSubmit={handleSubmit}>
                         <label htmlFor="name">Full Name:</label> <br />
-                        <input 
-                        type="text" 
-                        id="name" 
-                        name="name" 
-                        value={signUpData.name}
-                        onChange={handleformOnchange}
-                        placeholder="John Doe"
-                        required
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={signUpData.name}
+                            onChange={handleformOnchange}
+                            placeholder="John Doe"
+                            required
                         />
                         <br />
 
                         <label htmlFor="number">Phone Number:</label> <br />
-                        <input 
-                        type="tel" 
-                        id="number" 
-                        name="phonenumber" 
-                        value={signUpData.phonenumber}
-                        onChange={handleformOnchange}
-                        placeholder="+254700000000"
-                        required/>
+                        <input
+                            type="tel"
+                            id="number"
+                            name="phonenumber"
+                            value={signUpData.phonenumber}
+                            onChange={handleformOnchange}
+                            placeholder="+254700000000"
+                            required />
                         <br />
 
                         <label htmlFor="email">Email:</label> <br />
                         <input
-                        type="email" 
-                        id="email" 
-                        name="email"
-                        value={signUpData.email} 
-                        placeholder="johndoe@gmail.com"
-                        onChange={handleformOnchange}
-                        required
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={signUpData.email}
+                            placeholder="johndoe@gmail.com"
+                            onChange={handleformOnchange}
+                            required
                         />
                         <br />
 
                         <label htmlFor="password">Password:</label> <br />
-                        <input 
-                        type="password" 
-                        id="password" 
-                        name="password"
-                        value={signUpData.password}
-                        onChange={handleformOnchange}
-                        onFocus={handleOnfocus}
-                        required
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            value={signUpData.password}
+                            onChange={handleformOnchange}
+                            onFocus={handleOnfocus}
+                            required
                         />
                         <br />
                         <label htmlFor="conpassword">Confirm Password:</label> <br />
-                        <input 
-                        type="password" 
-                        id="conpassword" 
-                        name="conPass"
-                        value={signUpData.conPass} 
-                        onChange={handleformOnchange}
-                        onFocus={handleOnfocus}
-                        required/> 
+                        <input
+                            type="password"
+                            id="conpassword"
+                            name="conPass"
+                            value={signUpData.conPass}
+                            onChange={handleformOnchange}
+                            onFocus={handleOnfocus}
+                            required />
                         <br />
                         <br />
                         {notMatch && <p className='invalid'>Passwords do not match!</p>}
                         <button>Submit</button>
+                        <br />
+                        <button onClick={() => {
+                            navigate('/dashboard');
+                        }}>Dashboard</button>
                     </form>
                 </div>
             </div>
