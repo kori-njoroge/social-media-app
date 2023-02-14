@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/sidebar.css'
 import logo1 from '../images/logo-vertical.svg'
 import member from '../images/member.jpg'
@@ -27,28 +28,40 @@ export default function SideBar() {
             </div>
             <div className="sidebar-bottom">
                 <div className="activity">
-                    <i class="fa-solid fa-list-check"></i>
-                    <h5>Activity</h5>
+                    <Link to ={'activity'}>
+                    <i className="fa-solid fa-list-check"></i>
+                    <p>Activity</p>
+                    </Link>
                 </div>
                 <div className="activity">
-                    <i class="fa-regular fa-images"></i>
-                    <h5>Photos</h5>
+                    <Link to ={'photos'}>
+                    <i className="fa-regular fa-images"></i>
+                    <p>Photos</p>
+                    </Link>
                 </div>
                 <div className="activity">
-                    <i class="fa-solid fa-user-group"></i>
-                    <h5>People</h5>
+                    <Link to ={'people'}>
+                    <i className="fa-solid fa-user-group"></i>
+                    <p>People</p>
+                    </Link>
                 </div>
                 <div className="activity">
-                    <i class="fa-solid fa-users"></i>
-                    <h5>Groups</h5>
+                    <Link to ={'groups'}>
+                    <i className="fa-solid fa-users"></i>
+                    <p>Groups</p>
+                    </Link>
                 </div>
                 <div className="activity">
-                    <i class="fa-solid fa-play"></i>
-                    <h5>Watch</h5>
+                    <Link to ={'watch'}>
+                    <i className="fa-solid fa-play"></i>
+                    <p>Watch</p>
+                    </Link>
                 </div>
                 <div className="activity">
-                    <i class="fa-solid fa-comments"></i>
-                    <h5>Forums</h5>
+                    <Link to ={'forums'}>
+                    <i className="fa-solid fa-comments"></i>
+                    <p>Forums</p>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -74,5 +74,20 @@
     grid-template-columns: auto auto;
     padding: 0px 40px;
     text-align: center;
+    padding-top: 2vh;
+}
+.sidebar-bottom a{
+    text-decoration: none;
+    color: #7A8287;
+}
+.activity i{
+    margin-bottom: 10px;
+}
+.sidebar-bottom p{
+    margin-bottom:40px ;
+    margin-top: 0;
+}
+.activity:active{
+    color:red;
 }
 

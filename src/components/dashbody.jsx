@@ -8,7 +8,6 @@ export default function Dashbody() {
         <div className='dashbody'>
             <Navbar />
             <Outlet />
-            <div>Dashbody home tnbadgjhsgfsbfjh sdhhjfgjshfsj lahdjhdudf suyfhjdsjshf </div>
         </div>
     )
 }
