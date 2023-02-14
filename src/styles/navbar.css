@@ -1,3 +1,71 @@
+.dashbody{
+    width: 80%;
+}
 .nav{
-    
+    height: 12%;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+.navSection{
+    margin-right: auto;
+    margin-left:3vw;
+    color: #B7BCBF;
+    min-width: 50vw;
+}
+.navSection i{
+    font-size: 80% ;
+}
+.navSection input{
+    color: #979da0;
+    padding-left:0.7vw ;
+    border: none;
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+}
+.navSection input:focus{
+    outline: none;
+}
+.navright{
+display: flex;
+}
+.navright i{
+    margin: .5vw;
+    border-radius:50px;
+    font-size:80% ;
+    background-color: #edeef1;
+}
+.fa-user-plus{
+    padding: 9px 8px;
+}
+.fa-bell{
+    padding: 8px 9px;
+}
+.fa-envelope-open{
+    padding: 8px 9px;
+}
+.username{
+    display:flex;
+}
+.username{
+    display: flex;
+    align-items: center;
+}
+.navPhoto{
+    height: 5.5vh;
+    border-radius: 50%;
+    border: 1px solid #EEEDEE;
+}
+.username p{
+    font-size: 12px;
+    /* background-color: #edeef1; */
+    padding: 2px 5px;
+    border: 1px solid #edeef1;
+    border-radius: 4px;
+    font-family: sans-serif;
+    text-transform: capitalize;
 }
