@@ -1,4 +1,4 @@
-import  './Login.css';
+import  '../styles/login.css';
 import React from 'react';
 import logo from '../images/logo-icon.svg';
 function Login() {
@@ -25,7 +25,6 @@ function Login() {
        </div>
 
        <button type="submit">Sign in</button>
-       <input type="checkbox" id="remember" name="remember" value="remember" />
        <p>Forgot your password?</p>
        <p>Don't have an account? <a href="#">Sign up</a></p>       
     </form>
