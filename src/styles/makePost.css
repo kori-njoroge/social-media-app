@@ -1,0 +1,24 @@
+.makePost {
+    width: 80%;
+    margin: auto;
+    margin-top: 4vh;
+    display: flex;
+    padding: 5vh;
+    border-radius: 5px;
+    box-shadow:  10px 1px 10px rgba(0, 0, 0, 0.1);
+    /* padding-left: 10px; */
+}
+
+.userPhoto {
+    height: 6.5vh;
+    border-radius: 50%;
+    border: 1px solid #EEEDEE;
+}
+
+.makePost input {
+    margin-left: 10px;
+    border: 1px solid #E7EDF2;
+    border-radius: 20px;
+    width: 85%;
+    padding-left: 10px;
+}

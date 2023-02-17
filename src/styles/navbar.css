@@ -1,11 +1,18 @@
 .dashbody{
     width: 80%;
 }
+.DashboardMiddleContainer{
+    display: flex;
+
+}
+.containerLeft{
+    width: 65%;
+    border-right: 1px solid ;
+}
 .nav{
     height: 12%;
     border-bottom: 1px solid;
     border-right: 1px solid;
-    /* width: 100%; */
     display: flex;
     align-items: center;
     padding-right: 10px;
@@ -68,4 +75,5 @@ display: flex;
     border-radius: 4px;
     font-family: sans-serif;
     text-transform: capitalize;
+    color: #83848a;
 }
