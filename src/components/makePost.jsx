@@ -25,22 +25,16 @@ export default function MakePost() {
     }
 
     useEffect(() => {
-        console.log("This is the initial select value", selectedIndex);
+        // console.log("This is the initial select value", selectedIndex);
         function handleDeleteSelectedFile() {
-            console.log("This is the select", selectedIndex);
             if (selectedIndex === '') {
                 setFile([...file])
-                console.log("first")
             } else if (selectedIndex === 0) {
                 let shifted = file.shift()
                 setFile([...file])
-                console.log("indexo log", setFile([...file]))
-
             } else {
                 let spliced = file.splice(selectedIndex, 1)
                 setFile([...file]);
-                console.log("index1 log", setFile([...file]))
-
             }
         }
         handleDeleteSelectedFile()
@@ -64,7 +58,7 @@ export default function MakePost() {
                         placeholder={`What's new ${username}`}
                         onClick={() => {
                             setInputClicked(true)
-                            console.log(inputClicked)
+                            // console.log(inputClicked)
                         }}
                     />}
             </div>

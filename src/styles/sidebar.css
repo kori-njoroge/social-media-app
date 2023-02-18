@@ -22,7 +22,6 @@
     border-radius: 10px;
     padding: 15px 0px;
     border: 1px solid;
-    /* z-index: -20; */
 }
 
 .memberPhoto{
@@ -49,7 +48,7 @@
     margin-bottom: 3vh;
 }
 .friends h4, .groups h4{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'sans-serif';
     color: #7A8287;
     margin: 0;
     text-transform: capitalize;

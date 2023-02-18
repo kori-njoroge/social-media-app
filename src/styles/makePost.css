@@ -47,6 +47,7 @@
 }
 .makePost textarea:focus{
     outline: none;
+    font-family: sans-serif ;
 }
 
 .makePost hr{

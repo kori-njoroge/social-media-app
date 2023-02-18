@@ -14,19 +14,19 @@ export default function Dashboard() {
                 <SideBar />
             </div>
             <div className='dashbody'>
-            <Navbar />
-            <div className="DashboardMiddleContainer">
-                <div className="containerLeft">
-                    <MakePost />
-                    <Activity />
-                </div>
-                <div className="containerRight">
-                    <p>Members</p>
-                    <p>Hashtags</p>
+                <Navbar />
+                <div className="DashboardMiddleContainer">
+                    <div className="containerLeft">
+                        <MakePost />
+                        <Activity />
+                        <Outlet />
+                    </div>
+                    <div className="containerRight">
+                        <p>Members</p>
+                        <p>Hashtags</p>
+                    </div>
                 </div>
             </div>
-            <Outlet />
-        </div>
         </div>
     )
 }
