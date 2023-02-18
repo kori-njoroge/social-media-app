@@ -5,7 +5,8 @@ import logo from '../images/member.jpg'
 export default function MakePost() {
     const [inputClicked, setInputClicked] = useState(false);
     const [postIn, setPostIn] = useState("")
-    const [file, setFile] = useState(null);
+    const [file, setFile] = useState([]);
+    const [selectedIndex, setSelectedIndex] = useState()
     const fileInput = useRef(null);
 
     function handleAttachClick() {
@@ -19,9 +20,31 @@ export default function MakePost() {
 
     function handleFileInputChange(event) {
         event.preventDefault();
-        const file = event.target.files[0]
-        setFile(file)
+        const files = event.target.files[0]
+        setFile([...file, files])
     }
+
+    useEffect(() => {
+        console.log("This is the initial select value", selectedIndex);
+        function handleDeleteSelectedFile() {
+            console.log("This is the select", selectedIndex);
+            if (selectedIndex === '') {
+                setFile([...file])
+                console.log("first")
+            } else if (selectedIndex === 0) {
+                let shifted = file.shift()
+                setFile([...file])
+                console.log("indexo log", setFile([...file]))
+
+            } else {
+                let spliced = file.splice(selectedIndex, 1)
+                setFile([...file]);
+                console.log("index1 log", setFile([...file]))
+
+            }
+        }
+        handleDeleteSelectedFile()
+    }, [selectedIndex])
 
 
 
@@ -54,6 +77,16 @@ export default function MakePost() {
                         <input type="file" ref={fileInput} style={{ display: "none" }} onChange={handleFileInputChange} />
                     </div>
                     <hr />
+                    {file !== [] && file?.map((filo, index) => (
+                        <div className="selectedFile" key={index}>
+                            <p>{filo.name}</p>
+                            <p>
+                                <p className='fileSize'>{(filo.size / 1000).toString()}KB</p>
+                                <p style={{ borderLeft: '1px solid #aaaabb ', height: '20px' }}></p>
+                                <i className="fa-solid fa-xmark" onClick={() => setSelectedIndex(index)}></i>
+                            </p>
+                        </div>
+                    ))}
                     <div className='postMessage'>
                         <div className="selectDestination">
                             <select value={postIn} name="postIn" onChange={handleOption}>
@@ -68,16 +101,16 @@ export default function MakePost() {
                             >Cancel</button>
                             <button className='submitPost'>Post update</button>
                         </div>
-                        </div>
-                        {postIn ==='Post in: Group' &&
+                    </div>
+                    {postIn === 'Post in: Group' &&
                         <div className="searchGroups">
-                        <input 
-                        type="text"
-                        className='searchGroup'
-                        placeholder='Start typing the group name...'
-                        />
+                            <input
+                                type="text"
+                                className='searchGroup'
+                                placeholder='Start typing the group name...'
+                            />
                         </div>
-                        }
+                    }
                 </>
             }
         </div>

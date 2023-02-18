@@ -86,7 +86,7 @@
     margin-bottom:40px ;
     margin-top: 0;
 }
-.activity:active{
+.activity:focus{
     color:red;
 }
 

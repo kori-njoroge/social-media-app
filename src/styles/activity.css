@@ -17,7 +17,7 @@
     font-size: 14px;
     text-transform: capitalize;
 }
-.activityTabLink:active{
+.activityTabLink:focus  {
     color: #8123E2;
     border-bottom: 2px solid #8123E2;
 }

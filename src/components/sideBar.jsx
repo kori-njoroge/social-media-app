@@ -28,7 +28,7 @@ export default function SideBar() {
             </div>
             <div className="sidebar-bottom">
                 <div className="activity">
-                    <Link to ={'activity'}>
+                    <Link to ={'all members'}>
                     <i className="fa-solid fa-list-check"></i>
                     <p>Activity</p>
                     </Link>

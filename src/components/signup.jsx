@@ -106,7 +106,6 @@ export default function Signup() {
                             required
                         />
                         <br />
-
                         <label htmlFor="password">Password:</label> <br />
                         <input
                             type="password"
@@ -133,7 +132,7 @@ export default function Signup() {
                         <button>Submit</button>
                         <br />
                         <button onClick={() => {
-                            navigate('/dashboard');
+                            navigate('/dashboard/all members');
                         }}>Dashboard</button>
                     </form>
                 </div>

@@ -14,7 +14,6 @@
 
 .makePostContainer {
     display: flex;
-
 }
 
 .userPhoto {
@@ -78,6 +77,40 @@
     padding: 0px 15px;
     border: none;
 }
+.selectedFile{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F9FB;
+    font-size: 11px;
+    padding: 0px 20px;
+    border-radius: 25px;
+    font-family: sans-serif;
+    color: #7d7e80;
+    margin-bottom: 0.5vh;
+    height: 5vh;
+}
+.selectedFile p{
+    display: inline;
+    height: 100%;
+}
+.selectedFile button{
+    border: none;
+    
+}
+.selectedFile button:hover{
+    color: none;
+}
+.fileSize{
+    margin-right: 10px;
+}
+.fa-xmark{
+    padding: 1px 4px;
+    border-radius:50px ;
+    border: 1px solid;
+    margin-left: 10px;
+}
+
+
 .postMessage{
     display: flex;
     justify-content: space-between;
