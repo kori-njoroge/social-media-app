@@ -13,4 +13,7 @@
 .containerLeft{
     width: 65%;
     border-right: 1px solid ;
+    height: 87.5vh;
+    overflow: scroll;
+    /* padding-bottom: 2vh; */
 }

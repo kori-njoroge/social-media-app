@@ -10,11 +10,15 @@
     font-size: 12px;
 }
 
+.division {
+    margin: 0px 10px;
+}
+
+
 .postOwner {
     display: flex;
     justify-content: space-between;
-    width: 88%;
-    margin-left: 10px;
+    width: 100%;
 }
 
 .postOwnerName,
@@ -47,6 +51,7 @@
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid #dbdfe0;
+
 }
 
 .markasFav i:hover {
@@ -68,10 +73,10 @@
     transform: translateX(-25%);
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 10px, 0.2);
+    box-shadow: 10px 2px 4px rgba(0, 10px, 10px, 0.9);
     z-index: 1;
     width: 11vw;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
@@ -92,15 +97,57 @@
     background-color: #f0f0f0;
 }
 
+.postContent {
+    color: #70797E;
+    font-family: sans-serif;
+}
+
+.imgContainer {
+    overflow: hidden;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.contContainerImg {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0px, 0.5);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.contContainerImg:hover {
+    transform: scale(1.2);
+}
+
 .dropdown hr {
     height: 0.001vh;
     color: #ffffff;
     font-size: 1px;
 }
 
-.division {
+.likes-comment-share {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
+    width: 40%;
+    font-size: 13px;
+    margin: 0;
+}
+.like{
+    color: blueviolet;
+    height: 100%;
+}
+.like i{
+    margin-right: 3px;
+}
+.comment{
+    margin: auto;
+}
+
+.postContent hr{
     width: 100%;
+    height: 0.001vh;
+    color: #ffffff;
+    font-size: 1px;
+    margin-bottom: 1vh;
 }
