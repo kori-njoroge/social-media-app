@@ -6,6 +6,7 @@ import Signup from './components/signup';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
 import Activity from './components/activity';
+import ActivityTabs from './components/activityTabs';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />}>
-            <Route path=':route' element={<Activity />} />
+            {/* <Route path='/dashboard/activity' element={<Activity />}/> */}
+            <Route path=':route' element={<ActivityTabs />} />
           </Route>
           <Route path='*' element={<ErrorPage />} />
         </Routes>

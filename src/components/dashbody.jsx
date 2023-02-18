@@ -5,14 +5,14 @@ import { Outlet } from 'react-router-dom'
 import MakePost from './makePost'
 import Activity from './activity'
 
-export default function Dashbody() {
+export default function Dashbody({outlet}) {
     return (
         <div className='dashbody'>
             <Navbar />
             <div className="DashboardMiddleContainer">
                 <div className="containerLeft">
                     <MakePost />
-                    <Activity />
+                    <Activity outlet={outlet} />
                 </div>
                 <div className="containerRight">
                     <p>Members</p>

@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import '../styles/activity.css'
 
-export default function Activity() {
-
+export default function Activity({ outlet }) {
     const [activityTabs, setTabs] = useState(
         [
-            'All Members', 'My Groups', 'My Favorites', 'Mentions '
+            'all members', 'my groups', 'my favorites', 'my friends '
         ])
     return (
         <div className='activityComponent'>
             <div className="activityTabs">
-                {activityTabs && activityTabs.map((tab, index)=>(
+                {activityTabs && activityTabs.map((tab, index) => (
                     <Link to={`${tab}`} key={index} className='activityTabLink'>{tab}</Link>
                 ))}
             </div>
