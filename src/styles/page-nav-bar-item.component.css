@@ -1,0 +1,16 @@
+.c-Page-Nav-Bar-Item {
+    display: flex;
+    align-items: center;
+    color: #A15AEA;
+    cursor: pointer;
+}
+
+.c-Page-Nav-Bar-Item__Title {
+    margin-right: 16px;
+}
+
+.c-Page-Nav-Item__Count {
+    border-radius: 32%;
+    border: 1px solid lightgrey;
+    padding: 8px;
+}
