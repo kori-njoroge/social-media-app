@@ -1,12 +1,19 @@
 .makePost {
-    width: 80%;
+    width: 75%;
     margin: auto;
     margin-top: 4vh;
-    display: flex;
     padding: 5vh;
+    padding-bottom: 1.5vh;
     border-radius: 5px;
-    box-shadow:  10px 1px 10px rgba(0, 0, 0, 0.1);
-    /* padding-left: 10px; */
+    box-shadow:
+        2px 2px 150px rgba(0, 0, 0, 0.1),
+        -2px -2px 200px rgba(255, 255, 255, 0.1);
+
+}
+
+.makePostContainer {
+    display: flex;
+
 }
 
 .userPhoto {
@@ -21,4 +28,85 @@
     border-radius: 20px;
     width: 85%;
     padding-left: 10px;
+    font-family: sans-serif;
+}
+
+.makePost input:focus{
+    outline: none;
+}
+
+.makePost textarea {
+    margin-left: 10px;
+    border: none;
+    width: 96%;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    height: 90px;
+}
+.makePost textarea:focus{
+    outline: none;
+}
+
+.makePost hr{
+    width: 100%;
+    height: 0.001vh;
+    color: #ffffff;
+    font-size: 1px;
+    margin-bottom: 1vh;
+}
+.attachMedia {
+    color: #A35EEB;
+    height: 5vh;
+    margin-bottom: 1.5vh;
+}
+.attachMedia i{
+    border-radius:50px;
+    font-size:100% ;
+    background-color: #edeef1;
+}
+.attachMedia i{
+    padding: 10px 11px; 
+}
+.attachMedia button{
+    color: #9352da;
+    margin-left: 10px;
+    height: 100%;
+    border-radius: 15px;
+    padding: 0px 15px;
+    border: none;
+}
+.postMessage{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+
+.selectDestination select{
+    padding: 0px 10px;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid #edeef1;
+    background-color: transparent;
+}
+
+.cancelPost{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    height: 100%;
+    color: #a156f1;
+}
+.cancelPost:hover{
+    text-decoration: underline;
+}
+.submitPost{
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 0px 15px;
+    background-color: #9352da;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-left: 1vw;
 }
