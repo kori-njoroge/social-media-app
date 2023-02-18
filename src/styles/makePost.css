@@ -2,9 +2,9 @@
     width: 75%;
     margin: auto;
     margin-top: 4vh;
-    padding: 5vh;
-    padding-bottom: 1.5vh;
-    border-radius: 5px;
+    padding: 3vh;
+    padding-bottom: 3vh;
+    border-radius: 10px;
     box-shadow:
         2px 2px 150px rgba(0, 0, 0, 0.1),
         -2px -2px 200px rgba(255, 255, 255, 0.1);
@@ -29,6 +29,7 @@
     width: 85%;
     padding-left: 10px;
     font-family: sans-serif;
+    font-size: 12px;
 }
 
 .makePost input:focus{
@@ -42,6 +43,7 @@
     padding-left: 10px;
     padding-bottom: 3px;
     height: 90px;
+    font-size: 13px;
 }
 .makePost textarea:focus{
     outline: none;
@@ -87,6 +89,7 @@
     border-radius: 15px;
     border: 1px solid #edeef1;
     background-color: transparent;
+    color: #7d7e80;
 }
 
 .cancelPost{
@@ -109,4 +112,15 @@
     text-transform: capitalize;
     font-size: 15px;
     margin-left: 1vw;
+}
+
+.searchGroups{
+    height: 5vh;
+    width: 55%;
+    margin-top: 5px;
+    margin-left: -11px;
+}
+.searchGroup{
+    height: 100%;
+    padding-left: 20px;
 }

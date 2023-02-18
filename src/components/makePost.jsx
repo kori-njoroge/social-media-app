@@ -1,21 +1,28 @@
-import React, { useEffect, useState,useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import '../styles/makePost.css'
 import logo from '../images/member.jpg'
 
 export default function MakePost() {
-    const [inputClicked, setInputClicked] = useState(true);
-    const[file,setFile]= useState(null);
+    const [inputClicked, setInputClicked] = useState(!false);
+    const [postIn, setPostIn] = useState("")
+    const [file, setFile] = useState(null);
     const fileInput = useRef(null);
 
-    function handleAttachClick(){
+    function handleAttachClick() {
         fileInput.current.click();
     }
 
-    function handleFileInputChange(event){
+    function handleOption(event) {
+        event.preventDefault();
+        setPostIn(event.target.value)
+    }
+
+    function handleFileInputChange(event) {
         event.preventDefault();
         const file = event.target.files[0]
         setFile(file)
     }
+
 
 
     const username = 'Kori'
@@ -49,19 +56,28 @@ export default function MakePost() {
                     <hr />
                     <div className='postMessage'>
                         <div className="selectDestination">
-                            <select name="Postin" id="">
-                                <option value="">Post in: Profile</option>
-                                <option value="">Post in: Group</option>
+                            <select value={postIn} name="postIn" onChange={handleOption}>
+                                <option value="Post in: Profile">Post in: Profile</option>
+                                <option value="Post in: Group">Post in: Group</option>
                             </select>
                         </div>
-                        <div className="">
-                        <button 
-                        className="cancelPost"
-                        onClick={()=>setInputClicked(false)}
-                        >Cancel</button>
-                        <button className='submitPost'>Post update</button>
+                        <div className="classPostFooter">
+                            <button
+                                className="cancelPost"
+                                onClick={() => setInputClicked(false)}
+                            >Cancel</button>
+                            <button className='submitPost'>Post update</button>
                         </div>
-                    </div>
+                        </div>
+                        {postIn ==='Post in: Group' &&
+                        <div className="searchGroups">
+                        <input 
+                        type="text"
+                        className='searchGroup'
+                        placeholder='Start typing the group name...'
+                        />
+                        </div>
+                        }
                 </>
             }
         </div>
