@@ -17,8 +17,7 @@ function App() {
           <Route path={'/home'} element={<Home />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/dashboard' element={<Dashboard />}>
-            {/* <Route path='/dashboard/activity' element={<Activity />}/> */}
+          <Route path='/dashboard'  element={<Dashboard/>}>
             <Route path=':route' element={<ActivityTabs />} />
           </Route>
           <Route path='*' element={<ErrorPage />} />
