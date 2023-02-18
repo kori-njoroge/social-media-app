@@ -1,36 +1,26 @@
 import React from "react";
-import PageNavBarItem from "./page-nav-bar-item.component";
-import "../styles/page-nav-bar.component.css"
+import PageNavTabItem from "./page-nav-tab-item.component";
+import "../styles/page-nav-tab.component.css"
 
-let PageNavBar = () => {
-
-
-
+let PageNavTab = () => {
 
     let PAGE_NAV_BAR_ITEM_CONTENT = {
         title: "Active Photos",
         count: 15,
-        
-
     }
 
     return(
-        <div className="c-Page-Nav-Bar">
+        <div className="c-Page-Nav-Tab">
             <li>
-                <PageNavBarItem 
+                <PageNavTabItem 
                     title={PAGE_NAV_BAR_ITEM_CONTENT.title}
                     count={PAGE_NAV_BAR_ITEM_CONTENT.count}
                 />
-
-
             </li>
-
 
             <hr />
         </div>
-        
-
     )
 }
 
-export default PageNavBar
+export default PageNavTab
