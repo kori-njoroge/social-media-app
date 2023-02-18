@@ -3,7 +3,7 @@ import '../styles/makePost.css'
 import logo from '../images/member.jpg'
 
 export default function MakePost() {
-    const [inputClicked, setInputClicked] = useState(!false);
+    const [inputClicked, setInputClicked] = useState(false);
     const [postIn, setPostIn] = useState("")
     const [file, setFile] = useState(null);
     const fileInput = useRef(null);

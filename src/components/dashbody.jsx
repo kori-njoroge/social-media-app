@@ -3,6 +3,7 @@ import '../styles/navbar.css'
 import Navbar from './navbar'
 import { Outlet } from 'react-router-dom'
 import MakePost from './makePost'
+import Activity from './activity'
 
 export default function Dashbody() {
     return (
@@ -11,6 +12,7 @@ export default function Dashbody() {
             <div className="DashboardMiddleContainer">
                 <div className="containerLeft">
                     <MakePost />
+                    <Activity />
                 </div>
                 <div className="containerRight">
                     <p>Members</p>

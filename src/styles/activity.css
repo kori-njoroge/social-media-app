@@ -1,0 +1,27 @@
+.activityTabs{
+    display:  flex;
+    justify-content: space-between;
+    width: 85.5%;
+    margin: auto;
+    /* padding-bottom: 2vh; */
+}
+
+.activityTabLink{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    border-bottom: 2px solid #8123E2;
+    padding:2vh 1vw;
+}
+.activityTabLink:active{
+    color: #8123E2;
+}
+
+.activityComponent hr{
+    width: 85%;
+    height: 0.001vh;
+    color: #ffffff;
+    font-size: 1px;
+    margin-bottom: 1vh;
+    margin-top: -0.01.5vh;
+}
