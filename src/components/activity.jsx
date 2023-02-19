@@ -6,7 +6,7 @@ export default function Activity({ outlet }) {
     const[isActive,setActive]= useState(false)
     const [activityTabs, setTabs] = useState(
         [
-            'all members', 'my groups', 'my favorites', 'my friends '
+            'all members', 'my friends', 'my groups', 'my favorites'
         ])
     return (
         <div className='activityComponent'>
