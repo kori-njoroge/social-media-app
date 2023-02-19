@@ -23,9 +23,7 @@ function Login() {
        <p>Remember</p>
        <p><a href='#'>Forgot your password?</a></p>
        </div>
-
        <button type="submit">Sign in</button>
-       <p>Forgot your password?</p>
        <p>Don't have an account? <a href="#">Sign up</a></p>       
     </form>
 

@@ -6,7 +6,7 @@ import Signup from './components/signup';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
 import Activity from './components/activity';
-
+import UserProfile from './components/user-profile';
 function App() {
   return (
     <>
@@ -14,9 +14,11 @@ function App() {
         <Routes>
           <Route path={'/'} element={<Home />} />
           <Route path={'/home'} element={<Home />} />
+          <Route path='/user-profile' element={<UserProfile />}/> 
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />}>
+
             <Route path=':route' element={<Activity />} />
           </Route>
           <Route path='*' element={<ErrorPage />} />

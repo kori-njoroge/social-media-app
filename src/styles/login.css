@@ -1,12 +1,18 @@
 .login_container{
-    width: auto;
-    height: 100vh;
+    width: aut;
+    height: fit-content;
     background: #ffffff;
     background-image: url(../images/background.webp);
     display: flex;
     justify-content: space-evenly;
-    padding: 0 10%;
+ 
     align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    
+    
 
 }
 .login_left{
@@ -17,6 +23,7 @@
     display: flex;
     flex-direction: column;
     background-color: #ffffff
+    
 
 }
 .login_right{
@@ -77,7 +84,7 @@
     height: 40px;
     border: 1px solid #b663e3;
     border-radius: 20px;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 0 10px;
 }
 .check_box {
@@ -89,7 +96,7 @@
 
 }
 .pass>p{
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 .login_form>button{
     width: 310px;
