@@ -58,7 +58,7 @@ export default function MakePost() {
                         placeholder={`What's new ${username}`}
                         onClick={() => {
                             setInputClicked(true)
-                            // console.log(inputClicked)
+                            // console.log(inputClicked)        
                         }}
                     />}
             </div>
