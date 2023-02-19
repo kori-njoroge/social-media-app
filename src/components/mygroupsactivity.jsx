@@ -1,7 +1,11 @@
 import React from 'react'
 
+import GroupActivity from './groupactivity'
+
 export default function MyGroupsActivity() {
     return (
-        <div>MyGroupsActivity</div>
+        <div className='groupActivity'>
+            <GroupActivity />
+        </div>
     )
 }
