@@ -6,6 +6,7 @@ import img_bck from '../images/chelsea.jpg'
 import img_profile from '../images/john-doedp.jpg'
 import img1 from '../images/member.jpg'
 import img2 from '../images/messibanner.jpg'
+import UserPost from './user-posts'
 
 
 function userProfile(){
@@ -29,7 +30,7 @@ return(
 <div className='profile_main_content_header_nav'>
 <div className='profile_image'>
 
-<img className='img_profile' src={img_profile} alt='profile'  border-radius ="10px"/>
+<img className='img_profile' src={img_profile} alt='profile'  />
 <p>john doe</p>
 
 </div>
@@ -72,6 +73,13 @@ return(
 </div>
 </div>
 <div className='profile_main_content_center'>
+<div className='profile_main_content_center_header'>    
+<span className='profile_nav_con'>My Posts</span>
+<span className='profile_nav_con'>Friends</span>
+<span className='profile_nav_con'>Groups</span>
+</div>
+{/* footers outlet */}
+<UserPost/>
 </div>
 <div className='profile_main_content_right'>
  <h2>Recent Activity</h2> 
