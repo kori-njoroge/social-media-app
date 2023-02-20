@@ -26,8 +26,8 @@ function TwitterPost() {
         <button className="twitter-post__comment-submit-button" type="submit">Post</button>
       </form>
       <div className="twitter-post__comments">
-        {comments.map((comment, index) => (
-          <p className="twitter-post__comment" key={index}>{comment},<button>del</button></p>
+        {comments && comments.map((comment, index) => (
+          <p className="twitter-post__comment" key={index}>{comment} <button onClick={()=>setComments('')}>delete</button></p>
         ))}
       </div>
     </div>
