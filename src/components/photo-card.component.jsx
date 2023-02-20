@@ -8,7 +8,7 @@ let Photocard =  ({imagePost, userDP, userName}) => {
             <div className="c-Photo-Card__Main-Content">
                 <img src={imagePost} alt="" />
             </div>
-
+            
             <Link>
                 <div className="c-Photo-Card__Bottom-Content">
                     <div className="userDp-Holder">

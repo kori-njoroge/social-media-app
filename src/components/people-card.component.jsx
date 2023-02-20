@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import userDPx from "../images/member.jpg"
 
 let PeopleCard = ({userDp, userName, friendsCount, groupsCount, lastSeenDuration}) => {
-
-    /*
-    TODO("Fix the problem that is not enabling the image to be displayed; It displays if the img src value is NOT passed as a prop")
-    */
-
+    
     return(
         <div className="c-People-Card">
             <Link>
