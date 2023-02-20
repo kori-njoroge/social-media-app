@@ -1,0 +1,9 @@
+.people-page {
+    margin: 32px;
+}
+
+.people-page > hr {
+    color: lightgrey;
+    margin-bottom: 32px;
+
+}

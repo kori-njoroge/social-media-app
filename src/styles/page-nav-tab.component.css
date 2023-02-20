@@ -1,0 +1,13 @@
+.c-Page-Nav-Tab {
+    list-style: none;
+    /* text-decoration: underline;
+    text-decoration-color: #A15AEA;
+    text-decoration-thickness: 2px; */
+
+
+}
+
+.c-Page-Nav-Tab > hr {
+    color:  lightgrey;  
+    margin: 0; 
+}
