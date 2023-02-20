@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from '../images/member.jpg'
 import logo2 from '../images/azure.png'
 import LikeCommentShare from './likecommenrshare';
+import { Link } from 'react-router-dom';
 
 export default function AllMemberComponent() {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -13,7 +14,7 @@ export default function AllMemberComponent() {
         <div className="allMembersPosts">
             <div className="topPost">
                 <div>
-                    <img className='userPhoto' src={logo} alt="poster" />
+                <Link to ={'/user-profile'}><img className='userPhoto' src={logo} alt="poster" /></Link>    
                 </div>
                 <div className="division">
                     <div className="postOwner">

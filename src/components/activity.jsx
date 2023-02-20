@@ -19,6 +19,7 @@ export default function Activity({ outlet }) {
                 ))}
             </div>
             <hr />
+            <Outlet />
         </div>
         </>
     )

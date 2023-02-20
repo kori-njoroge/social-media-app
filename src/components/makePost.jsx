@@ -1,6 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import '../styles/makePost.css'
 import logo from '../images/member.jpg'
+import { Link } from 'react-router-dom';
 
 export default function MakePost() {
     const [inputClicked, setInputClicked] = useState(false);
@@ -42,7 +43,7 @@ export default function MakePost() {
     return (
         <div className='makePost'>
             < div className='makePostContainer'>
-                <img className='userPhoto' src={logo} alt="user image" />
+                <Link to ={'/user-profile'}> <img className='userPhoto' src={logo} alt="user image" /></Link>
                 {inputClicked ?
                     <textarea
                         placeholder={`What's new, ${username}?`}

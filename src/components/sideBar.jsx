@@ -10,7 +10,7 @@ export default function SideBar() {
             <div className="sidebar-top">
                 <img className='logo1' src={logo1} alt="vertical logo" />
                 <div className="usercard">
-                    <img className='memberPhoto' src={member} alt="member" />
+                    <Link to ={'/user-profile'}> <img className='memberPhoto' src={member} alt="member" /></Link>
                     <p className="userName">gideon kori</p>
                     <p className='position'>Member</p>
                     <hr />

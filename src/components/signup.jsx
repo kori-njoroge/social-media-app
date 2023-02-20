@@ -132,7 +132,7 @@ export default function Signup() {
                         <button>Submit</button>
                         <br />
                         <button onClick={() => {
-                            navigate('/dashboard/all members');
+                            navigate('/dashboard/activity');
                         }}>Dashboard</button>
                     </form>
                 </div>

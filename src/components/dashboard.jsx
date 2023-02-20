@@ -18,7 +18,7 @@ export default function Dashboard() {
                 <div className="DashboardMiddleContainer">
                     <div className="containerLeft">
                         {/* <MakePost /> */}
-                        <Activity />
+                        {/* <Activity /> */}
                         <Outlet />
                     </div>
                     <div className="containerRight">

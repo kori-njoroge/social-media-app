@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/navbar.css'
 import member from '../images/member.jpg'
+import { Link } from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
                 <i className="fa-solid fa-bell"></i>
                 <i className="fa-solid fa-envelope-open"></i>
                 <div className="username">
-                    <img className='navPhoto' src={member} alt="member" />
+                    <Link to={'/user-profile'}> <img className='navPhoto' src={member} alt="member" /></Link>
                     <p>Gideon</p>
                 </div>
             </div>
