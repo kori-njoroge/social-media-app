@@ -1,9 +1,11 @@
 import React from 'react'
 import SideBar from './sideBar'
-import '../styles/sidebar.css'
-import Dashbody from './dashbody'
 import { Outlet } from 'react-router-dom'
-// import { Outlet } from 'react-router-dom'
+import Navbar from './navbar'
+import '../styles/dashboard.css'
+import Activity from './activity'
+
+// import MakePost from './makePost'
 
 export default function Dashboard() {
     return (
@@ -11,7 +13,20 @@ export default function Dashboard() {
             <div className="sidebar">
                 <SideBar />
             </div>
-                <Dashbody />    
+            <div className='dashbody'>
+                <Navbar />
+                <div className="DashboardMiddleContainer">
+                    <div className="containerLeft">
+                        {/* <MakePost /> */}
+                        <Activity />
+                        <Outlet />
+                    </div>
+                    <div className="containerRight">
+                        <p>Members</p>
+                        <p>Hashtags</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

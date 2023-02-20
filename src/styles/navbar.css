@@ -1,11 +1,6 @@
-.dashbody{
-    width: 80%;
-}
 .nav{
     height: 12%;
-    border-bottom: 1px solid;
-    border-right: 1px solid;
-    /* width: 100%; */
+    border-bottom: 1px solid #DBDFE0;
     display: flex;
     align-items: center;
     padding-right: 10px;
@@ -68,4 +63,5 @@ display: flex;
     border-radius: 4px;
     font-family: sans-serif;
     text-transform: capitalize;
+    color: #83848a;
 }

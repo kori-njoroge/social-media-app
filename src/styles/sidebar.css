@@ -1,15 +1,10 @@
-.dashdash{
-    margin: -9px ;
-    height: 100vh;
-    display: flex;
-}
-
 /* SIDE BAR STYLES */
 .sidebar-container{
     width: 22vw;
-    border: 1px solid;
+    border: 1px solid #DBDFE0;
     height: 100vh;
     overflow:scroll;
+    z-index: 1;
 }
 .sidebar-top{
     background-color: #393B46;
@@ -53,7 +48,7 @@
     margin-bottom: 3vh;
 }
 .friends h4, .groups h4{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'sans-serif';
     color: #7A8287;
     margin: 0;
     text-transform: capitalize;
@@ -83,11 +78,14 @@
 .activity i{
     margin-bottom: 10px;
 }
+.activity p{
+    font-size: 12px;
+}
 .sidebar-bottom p{
     margin-bottom:40px ;
     margin-top: 0;
 }
-.activity:active{
+.activity:focus{
     color:red;
 }
 

@@ -1,0 +1,19 @@
+.dashdash{
+    margin: -9px ;
+    height: 100vh;
+    display: flex;
+}
+.dashbody{
+    width: 100%;
+}
+.DashboardMiddleContainer{
+    display: flex;
+
+}
+.containerLeft{
+    width: 65%;
+    border-right: 1px solid #DBDFE0;
+    height: 87.5vh;
+    overflow: scroll;
+    /* padding-bottom: 2vh; */
+}

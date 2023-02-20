@@ -1,0 +1,228 @@
+.allMembersPosts {
+    width: 85%;
+    margin: auto;
+    margin-top: 3vh;
+    font-family: sans-serif;
+}
+
+.topPost {
+    display: flex;
+    font-size: 12px;
+}
+
+.division {
+    margin: 0px 10px;
+}
+
+
+.postOwner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* position: absolute; */
+}
+
+.postOwnerName,
+.postOwnerUpdate {
+    display: inline;
+}
+
+
+.postOwnerName {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #70797E;
+}
+
+.postOwnerUpdate {
+    color: #70797E;
+}
+
+.postOwnerDuration {
+    color: #C4C4E0;
+    font-size: 12px;
+}
+
+
+.fa-ellipsis-vertical {
+    float: right;
+    border: none;
+    align-self: center;
+    padding: 7px 13px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #dbdfe0;
+
+}
+
+.fa-ellipsis-vertical:hover {
+    color: #636768;
+    background-color: white;
+}
+
+.fa-ellipsis-vertical {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.fa-ellipsis-vertical:hover {
+    color: white;
+}
+
+.markasFav {
+    position: absolute;
+    /* border: 1px solid; */
+}
+
+.dropdown {
+    left: 0;
+    transform: translateX(220%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 10px 2px 4px rgba(0, 10px, 10px, 0.9);
+    z-index: 1;
+    width: 11vw;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.dropdown li {
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #6a6f72;
+}
+
+.dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+.postContent {
+    color: #70797E;
+    font-family: sans-serif;
+}
+
+.imgContainer {
+    overflow: hidden;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.contContainerImg {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0px, 0.5);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.contContainerImg:hover {
+    transform: scale(1.2);
+}
+
+.dropdown hr {
+    height: 0.001vh;
+    color: #ffffff;
+    font-size: 1px;
+}
+
+.likes-comment-share {
+    display: flex;
+    width: 40%;
+    font-size: 13px;
+    margin: 0;
+    /* position: absolute; */
+}
+
+
+.like {
+    color: blueviolet;
+    height: 100%;
+}
+
+.like i {
+    margin-right: 3px;
+}
+
+.comment {
+    margin: auto;
+}
+
+.postContent hr {
+    width: 100%;
+    height: 0.001vh;
+    color: #ffffff;
+    font-size: 1px;
+    margin-bottom: 1vh;
+}
+
+.comment {
+    display: flex;
+}
+
+.textAreacomment {
+    width: 90%;
+    margin-left: .5vw;
+    border-radius: 15px;
+    border: 1px solid #9e9b9b;
+    padding: 0px 14px;
+    padding-top: 1px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #726e6e;
+}
+
+.textAreacomment:focus {
+    outline-color: #8931E5;
+    outline: none;
+    border: 1px solid #8931E5;
+}
+
+.btnsPost {
+    width: 100%;
+}
+
+.btnbtnbtn {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 1vh;
+    align-items: center;
+}
+
+.btnbtnbtn button {
+    font-size: 13px;
+}
+
+.submitPost-comment {
+    padding: 5px 20px;
+    margin-right: 1vw;
+    /* box-shadow: 10px 10px 2px rgba(0, 0, 0px, 0.5); */
+}
+
+.dropdownShare {
+    position: relative;
+    width: 30%;
+    left: 40%;
+    /* left: 30%; */
+    top: 16%;
+    transform: translateY(-60%);
+    /* transform: translateX(133%); */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 10px 2px 4px rgba(0, 10px, 10px, 0.9);
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.dropdownShare i {
+    margin: 0px 10px;
+}
