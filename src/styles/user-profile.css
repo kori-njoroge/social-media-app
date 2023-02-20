@@ -1,0 +1,151 @@
+.profile_page{
+  display: flex;
+  height: 100vh;
+}
+.profile_sidebar{
+ margin-right:auto;
+}
+.profile_main{
+  width: 100%;
+  height: 100%;
+}
+.profile_main_content_header{
+width: 100%;
+
+}
+
+
+.profile_main_content_header_nav{
+display: flex;
+align-items: center;
+
+}
+.img_profile{
+    border-radius :10px;
+}
+.profile_image{
+    margin-right:100px;
+    margin-top: -150px;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.profile_main_content_header_nav_bar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+   
+  
+}
+.nav_con{
+    align-items: center;
+    padding:auto auto; 
+    border-radius: 10px;
+    text-align: center;
+
+}
+.nav_con:hover{
+    color: #8224e3;
+    cursor: pointer;
+}
+.nav_con>i{
+    size: 20px;
+}
+
+
+.profile_main_content{
+display: flex;
+height: 100vh;
+width: 100%;
+border-right:1px solid #e7edf2;
+border-left:1px solid #e7edf2;
+border-top:1px solid #e7edf2;
+
+}
+
+.profile_main_content_left{
+    width: 20%;
+    height: 100%;
+    margin: 20px 20px;
+
+    
+}
+.profile_main_content_center{
+    width: 60%;
+    height: 100%;
+    margin: 20px 20px;
+    border-left:1px solid #e7edf2;
+    border-right:1px solid #e7edf2;
+}
+.profile_main_content_right{
+    width: 20%;
+    height: 100%;
+    margin: 20px 20px;
+  
+}
+
+.MyGrpsnFri{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.GrpsnFri{
+    align-items: center;
+    text-align: center;
+   
+}
+.GrpsnFri>h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #8224e3;
+}
+.MyPhotos{
+    text-align: center;
+}
+.MyphotosPic{
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+.MyphotosPic:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+.MyPhotos_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.profile_main_content_center_header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 20px;
+    border-bottom:1px solid #e7edf2;
+    padding-left: 50px;
+}   
+
+.profile_nav_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+.profile_nav_con:hover{
+    color: #8224e3;
+    cursor: pointer;
+    border-bottom:2px solid #8224e3;
+    border-top:2px solid #8224e3;
+    border-left:1px solid #8224e3;
+    border-right:1px solid #8224e3;
+    flex-grow: 0.1;
+    
+}
