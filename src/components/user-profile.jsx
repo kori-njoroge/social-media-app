@@ -7,6 +7,11 @@ import img_profile from '../images/john-doedp.jpg'
 import img1 from '../images/member.jpg'
 import img2 from '../images/messibanner.jpg'
 import UserPost from './user-posts'
+import { Link } from "react-router-dom";
+import Activity_header from './activity_header';
+import ChangingProfile from './changing-profile';
+import ViewProfile from './view-profile';
+import EditProile from './edit-profile';
 
 
 function userProfile(){
@@ -36,11 +41,11 @@ return(
 </div>
 
 <div className='profile_main_content_header_nav_bar'>
-    <span className='nav_con'> <i className="fa-solid fa-list-check"></i><p>activity</p></span>
-    <span className='nav_con'> <i className="fa-solid fa-user-group"></i><p>profile</p></span>
-    <span className='nav_con'> <i className="fa-solid fa-users"></i><p>friends</p></span>
-    <span className='nav_con'><i className="fa-solid fa-user-group"></i><p>groups</p></span>
-    <span className='nav_con'><i className="fa-regular fa-images"></i><p>media</p></span>
+ <span className='nav_con'><Link to ="/dashboard" > <i className="fa-solid fa-list-check"></i><p>activity</p></Link></span> 
+ <span className='nav_con'><Link to ="profile"> <i className="fa-solid fa-user-group"></i><p>profile</p></Link></span>
+ <span className='nav_con'><Link to ="friends"> <i className="fa-solid fa-users"></i><p>friends</p></Link></span>
+ <span className='nav_con'><Link to ="groups"><i className="fa-solid fa-user-group"></i><p>groups</p></Link></span>
+<span className='nav_con'><Link to ="media"> <i className="fa-regular fa-images"></i><p>media</p></Link></span>
 </div>   
 </div>
 </div>
@@ -73,13 +78,14 @@ return(
 </div>
 </div>
 <div className='profile_main_content_center'>
-<div className='profile_main_content_center_header'>    
-<span className='profile_nav_con'>My Posts</span>
-<span className='profile_nav_con'>Friends</span>
-<span className='profile_nav_con'>Groups</span>
-</div>
+
 {/* footers outlet */}
+<Activity_header/>
 <UserPost/>
+<ChangingProfile/>
+<ViewProfile/>
+<ChangingProfile/>
+<EditProile/>
 </div>
 <div className='profile_main_content_right'>
  <h2>Recent Activity</h2> 

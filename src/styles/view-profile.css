@@ -1,0 +1,18 @@
+.view_profile{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+
+}
+.view_profile>table{
+    width: 100%;
+    gap: 10px;
+}
+.view_profile>table>tr{
+border:1px solid #333;
+}
+
