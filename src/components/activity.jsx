@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import '../styles/activity.css'
+import MakePost from './makePost'
 
 export default function Activity({ outlet }) {
     const[isActive,setActive]= useState(false)
@@ -9,6 +10,8 @@ export default function Activity({ outlet }) {
             'all members', 'my friends', 'my groups', 'my favorites'
         ])
     return (
+        <>
+        <MakePost />
         <div className='activityComponent'>
             <div className="activityTabs">
                 {activityTabs && activityTabs.map((tab, index) => (
@@ -17,5 +20,6 @@ export default function Activity({ outlet }) {
             </div>
             <hr />
         </div>
+        </>
     )
 }

@@ -5,7 +5,7 @@ import Navbar from './navbar'
 import '../styles/dashboard.css'
 import Activity from './activity'
 
-import MakePost from './makePost'
+// import MakePost from './makePost'
 
 export default function Dashboard() {
     return (
@@ -17,7 +17,7 @@ export default function Dashboard() {
                 <Navbar />
                 <div className="DashboardMiddleContainer">
                     <div className="containerLeft">
-                        <MakePost />
+                        {/* <MakePost /> */}
                         <Activity />
                         <Outlet />
                     </div>

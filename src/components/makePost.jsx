@@ -6,7 +6,6 @@ export default function MakePost() {
     const [inputClicked, setInputClicked] = useState(false);
     const [postIn, setPostIn] = useState("")
     const [file, setFile] = useState([]);
-    const [selectedIndex, setSelectedIndex] = useState()
     const fileInput = useRef(null);
 
     function handleAttachClick() {
@@ -19,14 +18,13 @@ export default function MakePost() {
     }
 
     function handleFileInputChange(event) {
+        console.log(event.target.files)
         event.preventDefault();
-        const files = event.target.files[0]
-        setFile([...file, files])
+        const files = event.target.files
+        setFile([...file,...files])
     }
 
-    useEffect(() => {
-        // console.log("This is the initial select value", selectedIndex);
-        function handleDeleteSelectedFile() {
+        function handleDeleteSelectedFile(selectedIndex) {
             if (selectedIndex === '') {
                 setFile([...file])
             } else if (selectedIndex === 0) {
@@ -37,8 +35,6 @@ export default function MakePost() {
                 setFile([...file]);
             }
         }
-        handleDeleteSelectedFile()
-    }, [selectedIndex])
 
 
 
@@ -68,7 +64,14 @@ export default function MakePost() {
                     <div className='attachMedia'>
                         <i className="fa-solid fa-paperclip" onClick={handleAttachClick}></i>
                         <button onClick={handleAttachClick}>Attach media</button>
-                        <input type="file" ref={fileInput} style={{ display: "none" }} onChange={handleFileInputChange} />
+                        <input 
+                        type="file" 
+                        ref={fileInput} 
+                        style={{ display: "none" }} 
+                        accept="image/*"
+                        onChange={handleFileInputChange} 
+                        multiple
+                        />
                     </div>
                     <hr />
                     {file !== [] && file?.map((filo, index) => (
@@ -77,7 +80,9 @@ export default function MakePost() {
                             <p>
                                 <p className='fileSize'>{(filo.size / 1000).toString()}KB</p>
                                 <p style={{ borderLeft: '1px solid #aaaabb ', height: '20px' }}></p>
-                                <i className="fa-solid fa-xmark" onClick={() => setSelectedIndex(index)}></i>
+                                <i className="fa-solid fa-xmark" onClick={() => {
+                                    handleDeleteSelectedFile(index)
+                                    }}></i>
                             </p>
                         </div>
                     ))}
