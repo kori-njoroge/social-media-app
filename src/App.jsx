@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
-import ErrorPage from './components/errorPage';
+import ErrorPage from './components/errorPage'; 
 import Home from './components/home';
 import Signup from './components/signup';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
 import Activity from './components/activity';
+import Tweets from './components/tweets';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path={'/home'} element={<Home />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/tweets' element={<Tweets/>}/>
           <Route path='/dashboard' element={<Dashboard />}>
             <Route path=':route' element={<Activity />} />
           </Route>
