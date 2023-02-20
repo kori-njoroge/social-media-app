@@ -1,0 +1,8 @@
+.videos-page {
+    margin: 32px;
+}
+
+.videos-page > hr {
+    color: lightgrey;
+    margin-bottom: 32px;
+}

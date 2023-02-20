@@ -1,0 +1,18 @@
+.c-Page-Nav-Tab-Item {
+    display: flex;
+    align-items: center;
+    color: #A15AEA;
+    cursor: pointer;
+    border-bottom: 2px solid #A15AEA;
+    width: fit-content;
+}
+
+.c-Page-Nav-Tab-Item__Title {
+    margin-right: 16px;
+}
+
+.c-Page-Nav-Tab-Item__Count {
+    border-radius: 32%;
+    border: 1px solid lightgrey;
+    padding: 8px;
+}

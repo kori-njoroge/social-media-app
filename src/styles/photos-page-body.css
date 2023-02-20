@@ -1,0 +1,9 @@
+.photos-page {
+    margin: 32px;
+}
+
+.photos-page > hr {
+    color: lightgrey;
+    margin-bottom: 32px;
+
+}
