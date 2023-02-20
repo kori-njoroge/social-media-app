@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/page-nav-tab-item.component.css"
 
-
 let PageNavTabItem = ({title, count, onNavBarItemClicked}) => {
     
     //TODO("write logic to hide the count when it equals to zero, and display it otherwise")
