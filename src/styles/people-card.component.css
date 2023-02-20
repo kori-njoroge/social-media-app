@@ -1,0 +1,96 @@
+.c-People-Card {
+    width: 342px;
+    height: 528px;
+    border: 1px solid rgb(241, 237, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    justify-content: space-around;
+}
+
+.c-People-Card > a {
+    text-decoration: none;
+}
+
+
+
+.c-People-Card:hover {
+    box-shadow: 8px 1px 32px rgba(0, 0, 0, 0.1);
+}
+
+.c-People-Card__UserDP-Holder {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.c-People-Card__UserDP-Holder > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.c-People-Card__UserDP-Holder:hover > img {
+    transform: scale(1.4);
+    transition: transform 0.1s ease-out;
+    transform-origin: center center;
+}
+
+.c-People-Card__UserName {
+    color: black;
+    text-decoration: none;
+}
+.c-People-Card__UserName:hover {
+    text-decoration-line: underline;
+    color: #A15AEA;
+}
+
+.c-People-Card__LastSeenDuration {
+    color: grey;
+}
+
+.c-People-Card__userStat {
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+}
+
+.userStatItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userStatItem > p {
+    color: grey;
+}
+
+.userStatItem > h4 {
+    color: rgb(87, 81, 81);
+}
+
+.c-People-Card__VM-Button {
+    background-color: white; 
+    border: 1px solid #A15AEA;
+    color: #A15AEA;
+    border-radius: 32px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.c-People-Card__VM-Button:hover {
+    background-color: #A15AEA;
+    color: white;
+    border: none;
+}

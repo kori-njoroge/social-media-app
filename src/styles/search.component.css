@@ -1,0 +1,24 @@
+.c-Search-Container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 32px 0px;
+}
+
+.c-Search-Container__Input {
+    padding: 8px;
+    border-radius: 32px;
+    border: 1px solid lightgray
+}
+
+.c-Search-Container__Button {
+    margin-left: 16px;
+    border-radius: 50%;
+    background-color: #A15AEA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.c-Search-Container > button > i {
+    padding: 8px;
+}
