@@ -12,20 +12,19 @@ let VideoCard = ({userName, userDP, videoSource}) => {
 
     return(
         <div className="c-Video-Card">
-        <div className="c-Video-Card__Main-Content">
-            <video width="400" controls>
-                <source src={videoSource} type="video/mp4" />
-                <source src={videoSource} type="video/ogg" />
-            </video>
-        </div>
-
-        <Link>
-            <div className="c-Video-Card__Bottom-Content">
-                <div className="userDp-Holder">
-                    <img src={userDP} alt="" />
+            <div className="c-Video-Card__Main-Content">
+                <video width="400" controls>
+                    <source src={videoSource} type="video/mp4" />
+                    <source src={videoSource} type="video/ogg" />
+                </video>
+            </div>
+            <Link>
+                <div className="c-Video-Card__Bottom-Content">
+                    <div className="userDp-Holder">
+                        <img src={userDP} alt="" />
+                    </div>
+                    <h4>{userName}</h4>
                 </div>
-            <h4>{userName}</h4>
-        </div>
         </Link>
     </div>
 
