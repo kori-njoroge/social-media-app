@@ -1,0 +1,69 @@
+.twitter-post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .twitter-post__content {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .twitter-post__like-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .twitter-post__like-button:hover {
+    background-color: #ccc;
+  }
+  
+  .twitter-post__comment-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .twitter-post__comment-submit-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .twitter-post__comment-submit-button:hover {
+    background-color: #ccc;
+  }
+  
+  .twitter-post__comments {
+    margin-top: 10px;
+  }
+  
+  .twitter-post__comment {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .twitter-post__delete-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .twitter-post__delete-button:hover {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
