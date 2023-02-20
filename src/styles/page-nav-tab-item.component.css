@@ -3,6 +3,8 @@
     align-items: center;
     color: #A15AEA;
     cursor: pointer;
+    border-bottom: 2px solid #A15AEA;
+    width: fit-content;
 }
 
 .c-Page-Nav-Tab-Item__Title {

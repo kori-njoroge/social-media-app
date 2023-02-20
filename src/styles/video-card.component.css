@@ -2,6 +2,10 @@
     width: 250px;
 }
 
+.c-Video-Card > a {
+    text-decoration: none;
+}
+
 .c-Video-Card__Main-Content {
     border-radius: 16px;
     width: 250px;

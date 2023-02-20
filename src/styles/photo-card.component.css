@@ -1,6 +1,10 @@
 .c-Photo-Card {
     width: 250px;
 }
+.c-Photo-Card > a {
+    text-decoration: none;
+}
+
 
 .c-Photo-Card__Main-Content {
     border-radius: 16px;
