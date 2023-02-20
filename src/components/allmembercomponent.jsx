@@ -26,8 +26,8 @@ export default function AllMemberComponent() {
                                 <p>3 hours,7 minutes</p>
                             </div>
                         </div>
-                        <div className="markasFav">
                             <i onClick={handleClick} className="fa-solid fa-ellipsis-vertical"></i>
+                        <div className="markasFav">
                             {showDropdown && (
                                 <div className="dropdown">
                                     <ul>
@@ -36,7 +36,7 @@ export default function AllMemberComponent() {
                                         <li> Delete</li>
                                     </ul>
                                 </div>
-                            )}
+                            )}  
                         </div>
                     </div>
                     <div className="postContent">

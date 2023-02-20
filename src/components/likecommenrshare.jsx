@@ -24,6 +24,7 @@ export default function LikeCommentShare() {
                     setComment(false)
                 }}>Share <i className="fa-solid fa-plus"></i></p>
             </div>
+            <div className="likelikie">
             {triggerShare && (
                 <div className="dropdownShare">
                     <p><i className="fa-solid fa-share-nodes"></i> Share on Activity</p>
@@ -33,6 +34,7 @@ export default function LikeCommentShare() {
                     <p><i className="fab fa-instagram-square"></i> Share on Instagram</p>
                 </div>
             )}
+            </div>
             <hr />
             {comment &&
                 <>

@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    /* position: absolute; */
 }
 
 .postOwnerName,
@@ -44,9 +45,10 @@
 }
 
 
-.markasFav i {
+.fa-ellipsis-vertical {
     float: right;
     border: none;
+    align-self: center;
     padding: 7px 13px;
     border-radius: 50%;
     background-color: transparent;
@@ -54,9 +56,9 @@
 
 }
 
-.markasFav i:hover {
-    background-color: #dbdfe0;
-    color: white;
+.fa-ellipsis-vertical:hover {
+    color: #636768;
+    background-color: white;
 }
 
 .fa-ellipsis-vertical {
@@ -68,15 +70,21 @@
     color: white;
 }
 
+.markasFav {
+    position: absolute;
+    /* border: 1px solid; */
+}
+
 .dropdown {
     left: 0;
-    transform: translateX(-25%);
+    transform: translateX(220%);
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 10px 2px 4px rgba(0, 10px, 10px, 0.9);
     z-index: 1;
     width: 11vw;
     border-radius: 5px;
+    position: relative;
 }
 
 
@@ -132,7 +140,9 @@
     width: 40%;
     font-size: 13px;
     margin: 0;
+    /* position: absolute; */
 }
+
 
 .like {
     color: blueviolet;
@@ -198,19 +208,6 @@
     /* box-shadow: 10px 10px 2px rgba(0, 0, 0px, 0.5); */
 }
 
-.dropdownSare {
-    width: 30%;
-    box-shadow:
-        2px 2px 19px rgba(0, 0, 0, 0.2);
-    padding: 2px 0px;
-    background-color: #fff;
-
-
-    left: "90%";
-    transform: translateX(50%);
-}
-
-
 .dropdownShare {
     position: relative;
     width: 30%;
@@ -222,11 +219,10 @@
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 10px 2px 4px rgba(0, 10px, 10px, 0.9);
-    z-index: 1;
+    z-index: 2;
     border-radius: 5px;
 }
 
 .dropdownShare i {
     margin: 0px 10px;
 }
- 
