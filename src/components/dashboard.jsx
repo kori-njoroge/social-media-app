@@ -22,7 +22,7 @@ export default function Dashboard() {
                     </div>
                     <div className="containerRight">
                         <Members/>
-                        {/* <Hashtags /> */}
+                        <Hashtags />
                     </div>
                 </div>
             </div>

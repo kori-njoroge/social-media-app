@@ -15,8 +15,15 @@
     width: 65%;
     border-right: 1px solid #DBDFE0;
     height: 87.5vh;
+    height: 90vh;
     overflow: scroll;
+    /* padding-bottom: 2vh; */
+    /* border: 1px solid; */
 }
 .containerRight{
-    min-width: 30%;
+    min-width: 35%;
+    height: 90vh;
+    overflow: hidden;
+    overflow: scroll;
+    
 }
