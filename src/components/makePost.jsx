@@ -69,7 +69,7 @@ export default function MakePost() {
                         type="file" 
                         ref={fileInput} 
                         style={{ display: "none" }} 
-                        accept="image/*"
+                        accept="image/*,video/*"
                         onChange={handleFileInputChange} 
                         multiple
                         />

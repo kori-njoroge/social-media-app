@@ -3,9 +3,10 @@ import SideBar from './sideBar'
 import { Outlet } from 'react-router-dom'
 import Navbar from './navbar'
 import '../styles/dashboard.css'
-import Activity from './activity'
+import Members from './members'
+import Hashtags from './hashtags'
 
-// import MakePost from './makePost'
+
 
 export default function Dashboard() {
     return (
@@ -17,13 +18,11 @@ export default function Dashboard() {
                 <Navbar />
                 <div className="DashboardMiddleContainer">
                     <div className="containerLeft">
-                        {/* <MakePost /> */}
-                        {/* <Activity /> */}
                         <Outlet />
                     </div>
                     <div className="containerRight">
-                        <p>Members</p>
-                        <p>Hashtags</p>
+                        <Members/>
+                        {/* <Hashtags /> */}
                     </div>
                 </div>
             </div>
