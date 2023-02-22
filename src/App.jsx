@@ -16,6 +16,9 @@ import AllMembersActivity from './components/allmembersactivity';
 import ViewProfile from './components/view-profile';
 import ChangingProfile from './components/changing-profile';
 import EditProfile from './components/edit-profile';
+import ActivityHeader from './components/activity_header';
+import AllMemberComponent from './components/allmembercomponent';
+import MakePost from './components/makePost';
 
 
 
@@ -41,10 +44,14 @@ function App() {
             <Route path='watch' element={< VideoPageBody />} />
           </Route>
           <Route path='/user-profile' element={<UserProfile />} >
-            {/* acitity */}
+             <Route path='activity' element={<ActivityHeader />}>
+             <Route path='my-posts'element={<AllMemberComponent/>} />
+             <Route path='my-friends'element={<AllMemberComponent />} />
+             <Route path='my-groups'element={<AllMemberComponent />} />
+              </Route>
             <Route path='profile' element={<ChangingProfile />}>
               <Route path='view-profile' element={<ViewProfile />}></Route>
-              <Route path='edit-profile' element={<EditProfile />}></Route>
+              <Route path='edit-profile' element={<EditProfile/>}></Route>
               <Route path='change-profile' element={<ViewProfile />}></Route>
               <Route path='change-cover-image' element={<ViewProfile />}></Route>
             </Route>

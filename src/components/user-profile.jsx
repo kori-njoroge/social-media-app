@@ -81,13 +81,7 @@ function userProfile() {
                     
                     <div className='profile_main_content_center'>
                         <Outlet />
-                        {/* footers outlet */}
-                        {/* <Activity_header /> */}
-                        {/* <UserPost /> */}
-                        {/* <ChangingProfile />
-                        <ViewProfile />
-                        <ChangingProfile />
-                        <EditProile /> */}
+
                     </div>
                     <div className='profile_main_content_right'>
                         <h2>Recent Activity</h2>
