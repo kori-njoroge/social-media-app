@@ -1,0 +1,169 @@
+.c-Page-PopUp {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #fff; */
+    /* padding: 1rem; */
+    border-radius: 5px;
+    width: 70%;   
+    height: 80%;
+}
+
+.c-Page-PopUp__Main-Content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: black;
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+
+.top-content {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+.c-Page-PopUp__Main-Content >  div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.top-content > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.c-Page-PopUp__Supporting-Content {
+    background-color: white;
+    border: 300px solid yellow;
+}
+
+#c-Page-PopUp__Supporting-Content{
+    border: none
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.bottom-content:hover {
+    opacity: 0.6;
+}
+
+.bottom-content-left {
+    display: flex;
+    width: 70%;
+    flex-wrap: nowrap;
+    white-space: nowrap; 
+}
+
+.router-Link {
+    width: 100%;
+}
+
+.bottom-content-left__File-details {
+    width: 100%;
+    font-size: smaller;
+    white-space: nowrap;
+}
+
+.bottom-content-left__File-details > span {
+    text-decoration: underline;
+}
+
+.file-name {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 40%;
+}
+
+.posted-file-location {
+
+}
+
+.bottom-content-left > a {
+    color: gray;
+    text-decoration: none;
+}
+
+.bottom-content-left__File-name {
+    text-overflow: ellipsis;
+}
+
+.bottom-content-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.bottom-content-right > button {
+    border: none;
+    background-color: black;
+    color: gray;
+    cursor: pointer;
+}
+
+.bottom-content-right > button > p {
+    margin: 0%;
+}
+
+.bottom-content-right > a > button { 
+    border: none;
+    background-color: black;
+    color: gray;
+    cursor: pointer;
+}
+
+.bottom-content-right > a > button:hover {
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-content-right > button:hover {
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.c-Page-PopUp__Supporting-Content {
+    border: 1px solid black;
+    width: 50%;
+}
