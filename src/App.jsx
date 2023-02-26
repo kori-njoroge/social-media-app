@@ -19,7 +19,8 @@ import EditProfile from './components/edit-profile';
 import ActivityHeader from './components/activity_header';
 import AllMemberComponent from './components/allmembercomponent';
 import MakePost from './components/makePost';
-
+import BackgroundUploader from './components/edit-background-picture';
+import ProfileUploader from './components/edit-profile-picture';
 
 
 
@@ -49,11 +50,11 @@ function App() {
              <Route path='my-friends'element={<AllMemberComponent />} />
              <Route path='my-groups'element={<AllMemberComponent />} />
               </Route>
-            <Route path='profile' element={<ChangingProfile />}>
+            <Route path='profile' element={<ChangingProfile  />}>
               <Route path='view-profile' element={<ViewProfile />}></Route>
               <Route path='edit-profile' element={<EditProfile/>}></Route>
-              <Route path='change-profile' element={<ViewProfile />}></Route>
-              <Route path='change-cover-image' element={<ViewProfile />}></Route>
+              <Route path='edit-profile-picture' element={<ProfileUploader />}></Route>
+              <Route path='edit-background-picture' element={<BackgroundUploader />}></Route>
             </Route>
           </Route>
           <Route path='/tweets' element={<Tweets />} />
