@@ -19,7 +19,14 @@ import EditProfile from './components/edit-profile';
 import ActivityHeader from './components/activity_header';
 import AllMemberComponent from './components/allmembercomponent';
 import MakePost from './components/makePost';
-
+import BackgroundUploader from './components/edit-background-picture';
+import ProfileUploader from './components/edit-profile-picture';
+import UserFriends from './components/user-friends';
+import Friendships from './components/friendships';
+import FriendRequests from './components/friendrequests';
+import UserMedia from './components/user-media';
+import MyVideos from './components/myvideos';
+import MyPhotos from './components/myphotos';
 
 
 
@@ -44,17 +51,35 @@ function App() {
             <Route path='watch' element={< VideoPageBody />} />
           </Route>
           <Route path='/user-profile' element={<UserProfile />} >
-             <Route path='activity' element={<ActivityHeader />}>
-             <Route path='my-posts'element={<AllMemberComponent/>} />
-             <Route path='my-friends'element={<AllMemberComponent />} />
-             <Route path='my-groups'element={<AllMemberComponent />} />
-              </Route>
-            <Route path='profile' element={<ChangingProfile />}>
-              <Route path='view-profile' element={<ViewProfile />}></Route>
-              <Route path='edit-profile' element={<EditProfile/>}></Route>
-              <Route path='change-profile' element={<ViewProfile />}></Route>
-              <Route path='change-cover-image' element={<ViewProfile />}></Route>
+            <Route index element={<ActivityHeader />} />
+            <Route path='activity' element={<ActivityHeader />}>
+              <Route index element={<AllMemberComponent />} />
+              <Route path='my-posts' element={<AllMemberComponent />} />
+              <Route path='my-friends' element={<AllMemberComponent />} />
+              <Route path='my-groups' element={<AllMemberComponent />} />
             </Route>
+            <Route path='profile' element={<ChangingProfile />}>
+              <Route index element={<ViewProfile />}></Route>
+              <Route path='view-profile' element={<ViewProfile />}></Route>
+              <Route path='edit-profile' element={<EditProfile />}></Route>
+              <Route path='edit-profile-picture' element={<ProfileUploader />}></Route>
+              <Route path='edit-background-picture' element={<BackgroundUploader />}></Route>
+            </Route>
+            <Route index element={<UserFriends />}/>
+            <Route path='friends' element={<UserFriends />}>
+            <Route index element={<Friendships />}/>
+              <Route path='friendships' element={<Friendships />}></Route>
+              <Route path='friendship-requests' element={<FriendRequests />}></Route>
+
+            </Route>
+            <Route index element={<UserMedia />}/>
+            <Route path='user-media' element={<UserMedia />}>
+            <Route index element={<MyPhotos />}/>
+              <Route path='myphotos' element={<MyPhotos />}></Route>
+              <Route path='myvideos' element={<MyVideos />}></Route>
+
+            </Route>
+
           </Route>
           <Route path='/tweets' element={<Tweets />} />
 

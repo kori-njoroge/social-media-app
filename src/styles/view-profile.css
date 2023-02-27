@@ -1,4 +1,4 @@
-.view_profile{
+/* .view_profile{
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
@@ -14,5 +14,39 @@
 }
 .view_profile>table>tr{
 border:1px solid #333;
-}
-
+} */
+/* apply styles to the outermost div */
+.view_profile {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* apply styles to the headings */
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h6 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* apply styles to the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table td {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  table tr:first-child {
+    font-weight: bold;
+  }
+  

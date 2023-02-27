@@ -3,7 +3,7 @@ import "../styles/people-card.component.css"
 import { Link } from "react-router-dom";
 import userDPx from "../images/member.jpg"
 
-let PeopleCard = ({userDp, userName, friendsCount, groupsCount, lastSeenDuration, buttonTitle}) => {
+let FriendCard = ({userDp, userName, friendsCount, groupsCount, lastSeenDuration}) => {
     
     return(
         <div className="c-People-Card">
@@ -28,10 +28,10 @@ let PeopleCard = ({userDp, userName, friendsCount, groupsCount, lastSeenDuration
                 </div>
             </div>
             <Link>
-                <button className="c-People-Card__VM-Button">{buttonTitle}</button>
+                <button className="c-People-Card__VM-Button">Cancel Friendship</button>
             </Link>
         </div>
     )
 }
 
-export default PeopleCard
+export default FriendCard
