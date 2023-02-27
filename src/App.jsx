@@ -51,26 +51,33 @@ function App() {
             <Route path='watch' element={< VideoPageBody />} />
           </Route>
           <Route path='/user-profile' element={<UserProfile />} >
-             <Route path='activity' element={<ActivityHeader />}>
-             <Route path='my-posts'element={<AllMemberComponent/>} />
-             <Route path='my-friends'element={<AllMemberComponent />} />
-             <Route path='my-groups'element={<AllMemberComponent />} />
-              </Route>
-            <Route path='profile' element={<ChangingProfile  />}>
+            <Route index element={<ActivityHeader />} />
+            <Route path='activity' element={<ActivityHeader />}>
+              <Route index element={<AllMemberComponent />} />
+              <Route path='my-posts' element={<AllMemberComponent />} />
+              <Route path='my-friends' element={<AllMemberComponent />} />
+              <Route path='my-groups' element={<AllMemberComponent />} />
+            </Route>
+            <Route path='profile' element={<ChangingProfile />}>
+              <Route index element={<ViewProfile />}></Route>
               <Route path='view-profile' element={<ViewProfile />}></Route>
-              <Route path='edit-profile' element={<EditProfile/>}></Route>
+              <Route path='edit-profile' element={<EditProfile />}></Route>
               <Route path='edit-profile-picture' element={<ProfileUploader />}></Route>
               <Route path='edit-background-picture' element={<BackgroundUploader />}></Route>
             </Route>
-            <Route path='friends' element={<UserFriends/>}>
+            <Route index element={<UserFriends />}/>
+            <Route path='friends' element={<UserFriends />}>
+            <Route index element={<Friendships />}/>
               <Route path='friendships' element={<Friendships />}></Route>
-              <Route path='friendship-requests' element={<FriendRequests/>}></Route>
-             
+              <Route path='friendship-requests' element={<FriendRequests />}></Route>
+
             </Route>
-            <Route path='user-media' element={<UserMedia/>}>
+            <Route index element={<UserMedia />}/>
+            <Route path='user-media' element={<UserMedia />}>
+            <Route index element={<MyPhotos />}/>
               <Route path='myphotos' element={<MyPhotos />}></Route>
-              <Route path='myvideos' element={<MyVideos/>}></Route>
-             
+              <Route path='myvideos' element={<MyVideos />}></Route>
+
             </Route>
 
           </Route>
