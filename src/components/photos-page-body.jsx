@@ -35,7 +35,8 @@ let PhotosPageBody = () => {
         height: '100%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         zIndex: 9999,
-        // border: '1px solid red'
+        backdropFilter: 'blur(5px)'
+
       };
 
 
