@@ -15,14 +15,10 @@ function userProfile() {
         <div className='profile_page'>
 
             <div className='profile_side'>
-<<<<<<< HEAD
-                <SideBar />
-=======
                 <UserSideBar />
->>>>>>> 8ed49c5e0964776da1ae3918be499ead84c18499
             </div>
             <div className='profile_main'>
-                    <Navbar />
+                <Navbar />
                 <div className='profile_main_content_header'>
                     <div className='background_image'>
                         <img src={img_bck} alt='background' height="400px" width="100%" />
@@ -77,29 +73,25 @@ function userProfile() {
 
                     <div className='profile_main_content_center'>
                         <Outlet />
-<<<<<<< HEAD
-
-=======
->>>>>>> 8ed49c5e0964776da1ae3918be499ead84c18499
                     </div>
                     <div className='profile_main_content_right'>
                         <h2>Recent Activity</h2>
                         <ul>
                             <li>
-                            <span className='recent_activity'>
-                            <p><h3>Stewart Griffin</h3>posted an update</p>
-                            <h3>11 hours, 32 minutes ago</h3>
-                          </span>
-                          </li>
+                                <span className='recent_activity'>
+                                    <p><h3>Stewart Griffin</h3>posted an update</p>
+                                    <h3>11 hours, 32 minutes ago</h3>
+                                </span>
+                            </li>
 
-                          <li>
-                            <span className='recent_activity'>
-                            <p><h3>Peter Griffin</h3>posted an update</p>
-                            <h3>11 hours, 32 minutes ago</h3>
-                          </span>
-                          </li>
+                            <li>
+                                <span className='recent_activity'>
+                                    <p><h3>Peter Griffin</h3>posted an update</p>
+                                    <h3>11 hours, 32 minutes ago</h3>
+                                </span>
+                            </li>
                         </ul>
-                       
+
                     </div>
                 </div>
             </div>
