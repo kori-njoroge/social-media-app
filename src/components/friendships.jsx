@@ -2,8 +2,8 @@ import React from "react";
 import "../styles/people-page-body.css"
 import userDp from "../images/member.jpg"
 import SearchComponent from "./search.component";
-import PageNavTab from "./page-nav-tab.component";
 import PeopleCard from "./people-card.component";
+
 
 let Friendships= () => {
 
@@ -17,12 +17,14 @@ let Friendships= () => {
      'mapping' would be required
     */
 
-     let PEOPLE_CARD_CONTENT = {
+     let FRIEND_CARD_CONTENT = {
         userDp: userDp,
         friendsCount: 0,
         groupsCount: 4,
         userName: "John Doe",
-        lastSeenDuration: "32 min"
+        lastSeenDuration: "32 min",
+        buttonTitle:"Cancel Frienship"
+        
     }
 
     let PAGE_NAV_BAR_ITEM_CONTENT = {
@@ -31,7 +33,7 @@ let Friendships= () => {
     }
 
     console.log(userDp);
-    console.log("hello",PEOPLE_CARD_CONTENT.userDp);
+    console.log("hello",FRIEND_CARD_CONTENT.userDp);
 
 
     return(
@@ -41,12 +43,13 @@ let Friendships= () => {
             />
             <hr />
             {/* Listing to be done from here */}
-             <PeopleCard 
-                userDp={PEOPLE_CARD_CONTENT.userDp}
-                friendsCount={PEOPLE_CARD_CONTENT.friendsCount}
-                userName={PEOPLE_CARD_CONTENT.userName}
-                groupsCount={PEOPLE_CARD_CONTENT.groupsCount}
-                lastSeenDuration={PEOPLE_CARD_CONTENT.lastSeenDuration}
+             <PeopleCard
+                userDp={FRIEND_CARD_CONTENT.userDp}
+                friendsCount={FRIEND_CARD_CONTENT.friendsCount}
+                userName={FRIEND_CARD_CONTENT.userName}
+                groupsCount={FRIEND_CARD_CONTENT.groupsCount}
+                lastSeenDuration={FRIEND_CARD_CONTENT.lastSeenDuration}
+                buttonTitle={FRIEND_CARD_CONTENT.buttonTitle}
         />
         </div>
 

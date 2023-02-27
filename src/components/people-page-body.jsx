@@ -22,7 +22,8 @@ let PeoplePageBody = () => {
         friendsCount: 0,
         groupsCount: 4,
         userName: "John Doe",
-        lastSeenDuration: "32 min"
+        lastSeenDuration: "32 min",
+        buttonTitle:"View Profile"
     }
 
     let PAGE_NAV_BAR_ITEM_CONTENT = {
@@ -51,6 +52,7 @@ let PeoplePageBody = () => {
                 userName={PEOPLE_CARD_CONTENT.userName}
                 groupsCount={PEOPLE_CARD_CONTENT.groupsCount}
                 lastSeenDuration={PEOPLE_CARD_CONTENT.lastSeenDuration}
+                buttonTitle={PEOPLE_CARD_CONTENT.buttonTitle}
         />
         </div>
 

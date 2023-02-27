@@ -5,6 +5,7 @@ import SearchComponent from "./search.component";
 import PageNavTab from "./page-nav-tab.component";
 import PeopleCard from "./people-card.component";
 
+
 let FriendRequests= () => {
 
     /*
@@ -17,12 +18,14 @@ let FriendRequests= () => {
      'mapping' would be required
     */
 
-     let PEOPLE_CARD_CONTENT = {
+     let FRIEND_REQUEST_CONTENT = {
         userDp: userDp,
         friendsCount: 0,
         groupsCount: 4,
         userName: "John Doe",
-        lastSeenDuration: "32 min"
+        lastSeenDuration: "32 min",
+        buttonTitle:"Accept Frienship"
+
     }
 
     let PAGE_NAV_BAR_ITEM_CONTENT = {
@@ -31,19 +34,20 @@ let FriendRequests= () => {
     }
 
     console.log(userDp);
-    console.log("hello",PEOPLE_CARD_CONTENT.userDp);
+    console.log("hello",FRIEND_REQUEST_CONTENT.userDp);
 
 
     return(
         <div className="photos-page">
             <hr />
             {/* Listing to be done from here */}
-             <PeopleCard 
-                userDp={PEOPLE_CARD_CONTENT.userDp}
-                friendsCount={PEOPLE_CARD_CONTENT.friendsCount}
-                userName={PEOPLE_CARD_CONTENT.userName}
-                groupsCount={PEOPLE_CARD_CONTENT.groupsCount}
-                lastSeenDuration={PEOPLE_CARD_CONTENT.lastSeenDuration}
+             <PeopleCard
+                userDp={FRIEND_REQUEST_CONTENT.userDp}
+                friendsCount={FRIEND_REQUEST_CONTENT.friendsCount}
+                userName={FRIEND_REQUEST_CONTENT.userName}
+                groupsCount={FRIEND_REQUEST_CONTENT.groupsCount}
+                lastSeenDuration={FRIEND_REQUEST_CONTENT.lastSeenDuration}
+                buttonTitle={FRIEND_REQUEST_CONTENT.buttonTitle}
         />
         </div>
 
