@@ -1,8 +1,8 @@
 .dashdash{
     margin: -9px ;
     height: 100%;
-    display: flex;
     width: 100%;
+    display: flex;
 }
 .dashbody{
     width: 90%;

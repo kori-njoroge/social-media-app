@@ -1,15 +1,20 @@
+
 .profile_page {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
-.profile_sidebar {
-    margin-right: auto;
+
+.profile_side{
+    flex: 0.060;
 }
 
 .profile_main {
-    width: 100%;
+    flex: 0.94;
     height: 100%;
+    margin: auto;
+    flex-direction: column;
 }
 
 .profile_main_content_header {

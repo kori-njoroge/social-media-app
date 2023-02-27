@@ -1,21 +1,24 @@
 /* SIDE BAR STYLES */
-.sidebar-container{
+.sidebar-container {
     width: 22vw;
     border: 1px solid #DBDFE0;
     height: 100vh;
-    overflow:scroll;
+    overflow: scroll;
     z-index: 1;
 }
-.sidebar-top{
+
+.sidebar-top {
     background-color: #393B46;
     text-align: center;
     padding-top: 6vh;
 }
-.logo1{
+
+.logo1 {
     height: 16vh;
     margin-bottom: 2vh;
 }
-.usercard{
+
+.usercard {
     background-color: white;
     width: 80%;
     margin: auto;
@@ -24,46 +27,55 @@
     border: 1px solid;
 }
 
-.memberPhoto{
+.memberPhoto {
     height: 7.5vh;
     border-radius: 50%;
     padding: 0.8vh;
     border: 1px solid #EEEDEE;
 }
-.userName{
+
+.userName {
     margin: 0;
     font-family: sans-serif;
-    font-size:14px ;
+    font-size: 14px;
     text-transform: capitalize;
 }
-.position{
-    color:#c7c7e4;
+
+.position {
+    color: #c7c7e4;
     font-size: 12px;
 }
-.usercard hr{
+
+.usercard hr {
     width: 75%;
     height: 0.001vh;
     color: #ffffff;
     font-size: 1px;
     margin-bottom: 3vh;
 }
-.friends h4, .groups h4{
-    font-family:'sans-serif';
+
+.friends h4,
+.groups h4 {
+    font-family: 'sans-serif';
     color: #7A8287;
     margin: 0;
     text-transform: capitalize;
 }
-.friends p, .groups p{
+
+.friends p,
+.groups p {
     color: #c7c7e4;
     font-size: 12px;
     text-transform: capitalize;
 }
-.card-low{
+
+.card-low {
     display: flex;
     padding: 0px 45px;
     justify-content: space-around;
 }
-.sidebar-bottom{
+
+.sidebar-bottom {
     background-color: #F2F3F5;
     display: grid;
     grid-template-columns: auto auto;
@@ -71,21 +83,27 @@
     text-align: center;
     padding-top: 2vh;
 }
-.sidebar-bottom a{
+
+.sidebar-bottom a {
     text-decoration: none;
     color: #7A8287;
 }
-.activity i{
+
+.activity i {
     margin-bottom: 10px;
 }
-.activity p{
+
+.activity p {
     font-size: 12px;
 }
-.sidebar-bottom p{
-    margin-bottom:40px ;
+
+.sidebar-bottom p {
+    margin-bottom: 40px;
     margin-top: 0;
 }
-.activity:focus{
-    color:red;
+
+.activity:focus {
+    color: red;
 }
+
 
