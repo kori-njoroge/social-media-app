@@ -82,7 +82,6 @@ function App() {
 
           </Route>
           <Route path='/tweets' element={<Tweets />} />
-
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

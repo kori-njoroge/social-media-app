@@ -1,18 +1,12 @@
 import '../styles/user-profile.css';
 import React from 'react';
 import Navbar from './navbar'
-import SideBar from './sideBar';
 import img_bck from '../images/chelsea.jpg'
 import img_profile from '../images/john-doedp.jpg'
 import img1 from '../images/member.jpg'
 import img2 from '../images/messibanner.jpg'
-import UserPost from './user-posts'
 import { Link, Outlet } from "react-router-dom";
-import Activity_header from './activity_header';
-import ChangingProfile from './changing-profile';
-import ViewProfile from './view-profile';
-import EditProile from './edit-profile';
-
+import UserSideBar from './userSidebar';
 
 function userProfile() {
 
@@ -21,12 +15,14 @@ function userProfile() {
         <div className='profile_page'>
 
             <div className='profile_side'>
+<<<<<<< HEAD
                 <SideBar />
+=======
+                <UserSideBar />
+>>>>>>> 8ed49c5e0964776da1ae3918be499ead84c18499
             </div>
             <div className='profile_main'>
-                <Navbar />
-
-
+                    <Navbar />
                 <div className='profile_main_content_header'>
                     <div className='background_image'>
                         <img src={img_bck} alt='background' height="400px" width="100%" />
@@ -78,10 +74,13 @@ function userProfile() {
                         </div>
                     </div>
 
-                    
+
                     <div className='profile_main_content_center'>
                         <Outlet />
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8ed49c5e0964776da1ae3918be499ead84c18499
                     </div>
                     <div className='profile_main_content_right'>
                         <h2>Recent Activity</h2>
@@ -102,7 +101,6 @@ function userProfile() {
                         </ul>
                        
                     </div>
-
                 </div>
             </div>
 
