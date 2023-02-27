@@ -21,7 +21,7 @@ function userProfile() {
         <div className='profile_page'>
 
             <div className='profile_side'>
-                {/* <SideBar /> */}
+                <SideBar />
             </div>
             <div className='profile_main'>
                 <Navbar />
@@ -45,7 +45,7 @@ function userProfile() {
                             <span className='nav_con'><Link to="profile"> <i className="fa-solid fa-user-group"></i><p>profile</p></Link></span>
                             <span className='nav_con'><Link to="friends"> <i className="fa-solid fa-users"></i><p>friends</p></Link></span>
                             <span className='nav_con'><Link to="groups"><i className="fa-solid fa-user-group"></i><p>groups</p></Link></span>
-                            <span className='nav_con'><Link to="media"> <i className="fa-regular fa-images"></i><p>media</p></Link></span>
+                            <span className='nav_con'><Link to="user-media"> <i className="fa-regular fa-images"></i><p>media</p></Link></span>
                         </div>
                     </div>
                 </div>
@@ -85,10 +85,22 @@ function userProfile() {
                     </div>
                     <div className='profile_main_content_right'>
                         <h2>Recent Activity</h2>
-                        <span className='recent_activity'>
-                            <p>Gideon posted a new picture</p>
-                            <p>2 hours ago</p>
-                        </span>
+                        <ul>
+                            <li>
+                            <span className='recent_activity'>
+                            <p><h3>Stewart Griffin</h3>posted an update</p>
+                            <h3>11 hours, 32 minutes ago</h3>
+                          </span>
+                          </li>
+
+                          <li>
+                            <span className='recent_activity'>
+                            <p><h3>Peter Griffin</h3>posted an update</p>
+                            <h3>11 hours, 32 minutes ago</h3>
+                          </span>
+                          </li>
+                        </ul>
+                       
                     </div>
 
                 </div>

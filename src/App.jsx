@@ -21,6 +21,12 @@ import AllMemberComponent from './components/allmembercomponent';
 import MakePost from './components/makePost';
 import BackgroundUploader from './components/edit-background-picture';
 import ProfileUploader from './components/edit-profile-picture';
+import UserFriends from './components/user-friends';
+import Friendships from './components/friendships';
+import FriendRequests from './components/friendrequests';
+import UserMedia from './components/user-media';
+import MyVideos from './components/myvideos';
+import MyPhotos from './components/myphotos';
 
 
 
@@ -56,6 +62,17 @@ function App() {
               <Route path='edit-profile-picture' element={<ProfileUploader />}></Route>
               <Route path='edit-background-picture' element={<BackgroundUploader />}></Route>
             </Route>
+            <Route path='friends' element={<UserFriends/>}>
+              <Route path='friendships' element={<Friendships />}></Route>
+              <Route path='friendship-requests' element={<FriendRequests/>}></Route>
+             
+            </Route>
+            <Route path='user-media' element={<UserMedia/>}>
+              <Route path='myphotos' element={<MyPhotos />}></Route>
+              <Route path='myvideos' element={<MyVideos/>}></Route>
+             
+            </Route>
+
           </Route>
           <Route path='/tweets' element={<Tweets />} />
 
