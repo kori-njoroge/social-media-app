@@ -3,7 +3,7 @@ import "../styles/people-card.component.css"
 import { Link } from "react-router-dom";
 import userDPx from "../images/member.jpg"
 
-let PeopleCard = ({userDp, userName, friendsCount, groupsCount, lastSeenDuration}) => {
+let PeopleCard = ({userDp, userName, friendsCount, groupsCount, lastSeenDuration, buttonTitle}) => {
     
     return(
         <div className="c-People-Card">
@@ -28,7 +28,7 @@ let PeopleCard = ({userDp, userName, friendsCount, groupsCount, lastSeenDuration
                 </div>
             </div>
             <Link>
-                <button className="c-People-Card__VM-Button">View Profile</button>
+                <button className="c-People-Card__VM-Button">{buttonTitle}</button>
             </Link>
         </div>
     )
