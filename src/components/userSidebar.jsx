@@ -19,32 +19,32 @@ export default function UserSideBar() {
             </div>
             <div className={sidebarBottomsmall}>
                 <div className ={'smallActivity'}>
-                    <Link to ={'activity'}>
+                    <Link to ={'/dashboard/activity'}>
                     <i className="fa-solid fa-list-check"></i>
                     </Link>
                 </div>
                 <div className ={'smallActivity'}>
-                    <Link to ={'photos'}>
+                    <Link to ={'/dashboard/photos'}>
                     <i className="fa-regular fa-images"></i>
                     </Link>
                 </div>
                 <div className ={'smallActivity'}>
-                    <Link to ={'people'}>
+                    <Link to ={'/dashboard/people'}>
                     <i className="fa-solid fa-user-group"></i>
                     </Link>
                 </div>
                 <div className ={'smallActivity'}>
-                    <Link to ={'groups'}>
+                    <Link to ={'/dashboard/groups'}>
                     <i className="fa-solid fa-users"></i>
                     </Link>
                 </div>
                 <div className ={'smallActivity'}>
-                    <Link to ={'watch'}>
+                    <Link to ={'/dashboard/watch'}>
                     <i className="fa-solid fa-play"></i>
                     </Link>
                 </div>
                 <div className ={'smallActivity'}>
-                    <Link to ={'forums'}>
+                    <Link to ={'/dashboard/forums'}>
                     <i className="fa-solid fa-comments"></i>
                     </Link>
                 </div>

@@ -41,7 +41,6 @@ function App() {
             <Route path='watch' element={< VideoPageBody />} />
           </Route>
           <Route path='/user-profile' element={<UserProfile />} >
-            {/* acitity */}
             <Route path='profile' element={<ChangingProfile />}>
               <Route path='view-profile' element={<ViewProfile />}></Route>
               <Route path='edit-profile' element={<EditProfile />}></Route>
@@ -50,7 +49,6 @@ function App() {
             </Route>
           </Route>
           <Route path='/tweets' element={<Tweets />} />
-
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
