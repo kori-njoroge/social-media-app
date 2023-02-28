@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 let Photocard =  ({imagePost, userDP, userName, onPhotoCardClick}) => {
     return(
-        <div className="c-Photo-Card" onClick={onPhotoCardClick}>
-            <div className="c-Photo-Card__Main-Content">
+        <div className="c-Photo-Card" onClick={onPhotoCardClick} >
+            <div className="c-Photo-Card__Main-Content" >
                 <img src={imagePost} alt="" />
             </div>
             

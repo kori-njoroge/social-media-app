@@ -1,12 +1,13 @@
 .c-People-Card {
-    width: 342px;
-    height: 528px;
-    border: 1px solid rgb(241, 237, 237);
+    width: 16rem;
+    height: 30rem;
+    /* border: 1px solid rgb(241, 237, 237); */
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 16px;
     justify-content: space-around;
+    border:  1px solid red;
 }
 
 .c-People-Card > a {
@@ -64,6 +65,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .userStatItem > p {

@@ -30,10 +30,14 @@ let PagePopUp = ({
   return (
     <div className="c-Page-PopUp" style={popUpStyle}>
       <div className="c-Page-PopUp__Main-Content">
-      <a className ="prev" onclick="">
+      <div className="top-content">
+          {mainContent}
+        </div>
+
+      <a className ="prev" >
             <i className="fa-sharp fa-solid fa-less-than"></i>
           </a>
-          <a className="next" onclick="">
+          <a className="next">
             <i className="fa-sharp fa-solid fa-greater-than"></i>
           </a>
         {/* <img src={imagePost} alt="" />
@@ -41,10 +45,7 @@ let PagePopUp = ({
                     <source src={videoPost} type="video/mp4" />
                     <source src={videoPost} type="video/ogg" />
                 </video> */}
-        <div className="top-content">
-          {mainContent}
-        </div>
-
+        
         <div className="bottom-content">
           <div className="bottom-content-left">
             <Link to={"/user-profile"} className="router-Link">
