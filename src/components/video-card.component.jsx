@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../styles/video-card.component.css"
 
-let VideoCard = ({userName, userDP, videoSource}) => {
+let VideoCard = ({userName, userDP, videoSource, onVideoCardClick}) => {
 
-    /*
-    TODO("Add the video duration design at the top right hand of the card")
+    const [isPlaying, setIsPlaying] = useState(false);
+    const videoRef = useRef(null);
 
-    TODO("hide some of the unwanted playing controls that are displayed by default")
-    */
+    const togglePlay = () => {
+        if (isPlaying) {
+            videoRef.current.pause();
+        } else {
+            videoRef.current.play();
+        }
+        setIsPlaying(!isPlaying);
+    }
 
     return(
-        <div className="c-Video-Card">
-            <div className="c-Video-Card__Main-Content">
-                <video width="400" controls>
-                    <source src={videoSource} type="video/mp4" />
-                    <source src={videoSource} type="video/ogg" />
-                </video>
+        <div className="c-Video-Card"  onClick={onVideoCardClick}>
+            <div className="c-Video-Card__Main-Content" >
+                <video ref={videoRef} src={videoSource} onClick={togglePlay}></video>
+                { !isPlaying &&
+                    <div className="c-Video-Card__PlayButton" onClick={togglePlay}>
+                        <i className="fas fa-play"></i>
+                    </div>
+                }
             </div>
             <Link>
                 <div className="c-Video-Card__Bottom-Content">
@@ -25,12 +33,9 @@ let VideoCard = ({userName, userDP, videoSource}) => {
                     </div>
                     <h4>{userName}</h4>
                 </div>
-        </Link>
-    </div>
-
+            </Link>
+        </div>
     )
 }
 
-export default VideoCard
-
-
+export default VideoCard;
