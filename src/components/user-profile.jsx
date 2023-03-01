@@ -1,18 +1,12 @@
 import '../styles/user-profile.css';
 import React from 'react';
 import Navbar from './navbar'
-import SideBar from './sideBar';
 import img_bck from '../images/chelsea.jpg'
 import img_profile from '../images/john-doedp.jpg'
 import img1 from '../images/member.jpg'
 import img2 from '../images/messibanner.jpg'
-import UserPost from './user-posts'
 import { Link, Outlet } from "react-router-dom";
-import Activity_header from './activity_header';
-import ChangingProfile from './changing-profile';
-import ViewProfile from './view-profile';
-import EditProile from './edit-profile';
-
+import UserSideBar from './userSidebar';
 
 function userProfile() {
 
@@ -21,12 +15,10 @@ function userProfile() {
         <div className='profile_page'>
 
             <div className='profile_side'>
-                {/* <SideBar /> */}
+                <UserSideBar />
             </div>
             <div className='profile_main'>
                 <Navbar />
-
-
                 <div className='profile_main_content_header'>
                     <div className='background_image'>
                         <img src={img_bck} alt='background' height="400px" width="100%" />
@@ -45,7 +37,7 @@ function userProfile() {
                             <span className='nav_con'><Link to="profile"> <i className="fa-solid fa-user-group"></i><p>profile</p></Link></span>
                             <span className='nav_con'><Link to="friends"> <i className="fa-solid fa-users"></i><p>friends</p></Link></span>
                             <span className='nav_con'><Link to="groups"><i className="fa-solid fa-user-group"></i><p>groups</p></Link></span>
-                            <span className='nav_con'><Link to="media"> <i className="fa-regular fa-images"></i><p>media</p></Link></span>
+                            <span className='nav_con'><Link to="user-media"> <i className="fa-regular fa-images"></i><p>media</p></Link></span>
                         </div>
                     </div>
                 </div>
@@ -78,19 +70,29 @@ function userProfile() {
                         </div>
                     </div>
 
-                    
+
                     <div className='profile_main_content_center'>
                         <Outlet />
-
                     </div>
                     <div className='profile_main_content_right'>
                         <h2>Recent Activity</h2>
-                        <span className='recent_activity'>
-                            <p>Gideon posted a new picture</p>
-                            <p>2 hours ago</p>
-                        </span>
-                    </div>
+                        <ul>
+                            <li>
+                                <span className='recent_activity'>
+                                    <p><h3>Stewart Griffin</h3>posted an update</p>
+                                    <h3>11 hours, 32 minutes ago</h3>
+                                </span>
+                            </li>
 
+                            <li>
+                                <span className='recent_activity'>
+                                    <p><h3>Peter Griffin</h3>posted an update</p>
+                                    <h3>11 hours, 32 minutes ago</h3>
+                                </span>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
 

@@ -9,7 +9,7 @@ import PageNavTab from "./page-nav-tab.component";
 import PagePopUp from "./page-popup.component";
 
 
-let PhotosPageBody = () => {
+let MyPhotos = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -35,8 +35,7 @@ let PhotosPageBody = () => {
         height: '100%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         zIndex: 9999,
-        backdropFilter: 'blur(5px)'
-
+        // border: '1px solid red'
       };
 
 
@@ -94,4 +93,4 @@ let PhotosPageBody = () => {
   );
 };
 
-export default PhotosPageBody;
+export default MyPhotos;

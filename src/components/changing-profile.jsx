@@ -11,10 +11,10 @@ const ChangingProfile = () => {
             <div className='profile_main_content_center_header'>
                 <Link to={'view-profile'} className='profile_nav_con'>View</Link >
                 <Link to={'edit-profile'} className='profile_nav_con'>Edit</Link >
-                <Link  className='profile_nav_con'>ChangeProfilePhoto</Link >
-                <Link className='profile_nav_con'>ChangeCoverImage</Link>
+                <Link to={'edit-profile-picture'} className='profile_nav_con'>ChangeProfilePhoto</Link >
+                <Link to={'edit-background-picture'} className='profile_nav_con'>ChangeCoverImage</Link>
             </div>
-            <Outlet />
+            <Outlet  />
         </>
     )
 }

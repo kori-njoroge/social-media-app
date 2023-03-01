@@ -1,0 +1,36 @@
+.sidebar-top-small {
+    display: flex;
+    background-color: #393B46;
+    height: 11.5vh;
+    padding: auto;
+    justify-content: center;
+}
+
+.logoSmall {
+    border-radius: 50%;
+    height: 60%;
+    width: 100%;
+    margin: auto 0px;
+}
+
+.small-sidebar-bottom {
+    background-color: #F2F3F5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 70%;
+    padding-top: 2vh;
+}
+
+
+.small-sidebar-bottom a {
+    text-decoration: none;
+    color: #7A8287;
+}
+
+
+.smallActivity i {
+    
+    margin-bottom: 10VH;
+}

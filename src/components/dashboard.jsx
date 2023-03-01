@@ -15,13 +15,13 @@ export default function Dashboard() {
                 <SideBar />
             </div>
             <div className='dashbody'>
-                <Navbar />
+                    <Navbar />
                 <div className="DashboardMiddleContainer">
                     <div className="containerLeft">
                         <Outlet />
                     </div>
                     <div className="containerRight">
-                        <Members/>
+                        <Members />
                         <Hashtags />
                     </div>
                 </div>
