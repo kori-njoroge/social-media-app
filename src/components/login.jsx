@@ -9,31 +9,34 @@ import apiLink from './apilink';
 
 function Login() {
   const navigate = useNavigate()
+  const [message, setMessage] = useState('');
   const [loginData, setLoginData] = useState(
     {
       email: '',
       password: ''
     }
   )
-  // const [email, setEmail] = useState('')
-  // const [password, setPassword] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("this is the data", loginData);
-    axios.post(`${apiLink}/users/login`).then(result => {
-      console.log(result)
-    }).catch(err => {
-      console.log(err);
-    })
-
-
-    // if( email === 'admin' && password === 'admin') {
-    //   navigate('/dashboard/activity')
-    // }
-    // else {
-    //   alert('Invalid Credentials')
-    // }
+    if (loginData.email.trim() || loginData.password.trim()) {
+      axios.post(`${apiLink}/users/login`, {
+        email: loginData.email,
+        password: loginData.password
+      }).then(result => {
+        const { message } = result.data
+        console.log(result.data.message)
+        setMessage(message)
+        if (message === 'Login successful') {
+          setTimeout(() => {
+            navigate('/dashboard/activity')
+          }, 1000);
+        }
+      }).catch(err => {
+        console.log(err);
+      })
+    }
   }
 
   function handleOnChange(event) {
@@ -60,6 +63,7 @@ function Login() {
           <h2>Sign in</h2>
           <p>Lorem ipsum dolor sit amet consectetur aellendus.<br></br>
             sunt temporibus non officia corporivoluptate quasi.</p>
+          <p className='invalid'>{message && message}</p>
           <form className='login_form' onSubmit={handleSubmit}>
             <input
               type="text"
