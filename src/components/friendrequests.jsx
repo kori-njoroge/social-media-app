@@ -15,7 +15,7 @@ let FriendRequests = () => {
 
     /*The below object is to be replaced with props passed from
     the PeoplePage component. It would probaly be a list of objects;
-     'mapping' would be required
+    'mapping' would be required
     */
 
     let FRIEND_REQUEST_CONTENT = {
