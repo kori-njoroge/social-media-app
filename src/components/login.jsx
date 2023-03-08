@@ -1,23 +1,49 @@
 import '../styles/login.css';
-import React, {useState}from 'react';
+import React, { useState } from 'react';
 import logo from '../images/logo-icon.svg';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import apiLink from './apilink';
 
 
 function Login() {
   const navigate = useNavigate()
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [loginData, setLoginData] = useState(
+    {
+      email: '',
+      password: ''
+    }
+  )
+  // const [email, setEmail] = useState('')
+  // const [password, setPassword] = useState('')
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-  if( email === 'admin' && password === 'admin') {
-    navigate('/dashboard/activity')
+    e.preventDefault();
+    console.log("this is the data", loginData);
+    axios.post(`${apiLink}/users/login`).then(result => {
+      console.log(result)
+    }).catch(err => {
+      console.log(err);
+    })
+
+
+    // if( email === 'admin' && password === 'admin') {
+    //   navigate('/dashboard/activity')
+    // }
+    // else {
+    //   alert('Invalid Credentials')
+    // }
   }
-  else {
-    alert('Invalid Credentials')
-  }
+
+  function handleOnChange(event) {
+    const { name, value } = event.target
+    setLoginData(prevState => {
+      return {
+        ...prevState,
+        [name]: value
+      }
+    });
   }
 
 
@@ -34,12 +60,28 @@ function Login() {
           <h2>Sign in</h2>
           <p>Lorem ipsum dolor sit amet consectetur aellendus.<br></br>
             sunt temporibus non officia corporivoluptate quasi.</p>
-          <form className='login_form'>
-            <input type="text" placeholder="Email"  onChange={(e) => {setEmail(e.target.value)}}/>
-            <input type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} />
+          <form className='login_form' onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Email"
+              name='email'
+              value={loginData.email}
+              onChange={handleOnChange}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              name='password'
+              value={loginData.password}
+              onChange={handleOnChange} />
 
             <div className='pass'>
-              <input className="check_box" type="checkbox" id="remember" name="remember" value="remember" />
+              <input
+                className="check_box"
+                type="checkbox"
+                id="remember"
+                name="remember"
+                value="remember" />
               <p>Remember</p>
               <p><a href='#'>Forgot your password?</a></p>
             </div>
