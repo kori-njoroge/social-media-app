@@ -6,7 +6,7 @@ import PageNavTab from "./page-nav-tab.component";
 import PeopleCard from "./people-card.component";
 
 
-let FriendRequests= () => {
+let FriendRequests = () => {
 
     /*
         TODO("Implement the sorting component design for this page ")
@@ -18,13 +18,13 @@ let FriendRequests= () => {
      'mapping' would be required
     */
 
-     let FRIEND_REQUEST_CONTENT = {
+    let FRIEND_REQUEST_CONTENT = {
         userDp: userDp,
         friendsCount: 0,
         groupsCount: 4,
         userName: "John Doe",
         lastSeenDuration: "32 min",
-        buttonTitle:"Accept Frienship"
+        buttonTitle: "Accept Frienship"
 
     }
 
@@ -34,24 +34,24 @@ let FriendRequests= () => {
     }
 
     console.log(userDp);
-    console.log("hello",FRIEND_REQUEST_CONTENT.userDp);
+    console.log("hello", FRIEND_REQUEST_CONTENT.userDp);
 
 
-    return(
+    return (
         <div className="photos-page">
             <hr />
             {/* Listing to be done from here */}
-             <PeopleCard
+            <PeopleCard
                 userDp={FRIEND_REQUEST_CONTENT.userDp}
                 friendsCount={FRIEND_REQUEST_CONTENT.friendsCount}
                 userName={FRIEND_REQUEST_CONTENT.userName}
                 groupsCount={FRIEND_REQUEST_CONTENT.groupsCount}
                 lastSeenDuration={FRIEND_REQUEST_CONTENT.lastSeenDuration}
                 buttonTitle={FRIEND_REQUEST_CONTENT.buttonTitle}
-        />
+            />
         </div>
 
-    )  
+    )
 }
 
 export default FriendRequests

@@ -50,6 +50,10 @@ function App() {
             <Route path='people' element={< PeoplePageBody />} />
             <Route path='watch' element={< VideoPageBody />} />
           </Route>
+
+
+
+
           <Route path='/user-profile' element={<UserProfile />} >
             <Route index element={<ActivityHeader />} />
             <Route path='activity' element={<ActivityHeader />}>
